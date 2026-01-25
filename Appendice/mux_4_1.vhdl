@@ -1,4 +1,3 @@
--- Module Name: mux_4_1 - Behavioral
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 entity mux_4_1 is
