@@ -1,0 +1,5 @@
+Time resolution is 1 ps
+Note: INIZIO TEST ROUTING COMPLETO (256 Percorsi)
+Time: 50 ns  Iteration: 0  Process: /tb_rete_32_8/stim_proc  File: /home/user/Desktop/rete_32_8/rete_32_8.srcs/sim_1/new/tb_rete_32_8.vhd
+Note: TEST COMPLETATO CON SUCCESSO. Tutti i percorsi funzionano.
+Time: 2610 ns  Iteration: 0  Process: /tb_rete_32_8/stim_proc  File: /home/user/Desktop/rete_32_8/rete_32_8.srcs/sim_1/new/tb_rete_32_8.vhd

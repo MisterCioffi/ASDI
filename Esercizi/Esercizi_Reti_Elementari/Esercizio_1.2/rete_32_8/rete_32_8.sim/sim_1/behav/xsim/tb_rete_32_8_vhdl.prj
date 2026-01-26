@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../mux_32_1/mux_32_1.srcs/sources_1/new/MUX_32_1.vhd" \
+"../../../../rete_32_8.srcs/sources_1/new/demux_8_1.vhd" \
+"../../../../../mux_32_1/mux_32_1.srcs/sources_1/new/mux_2_1.vhd" \
+"../../../../../mux_32_1/mux_32_1.srcs/sources_1/new/mux_4_1.vhd" \
+"../../../../rete_32_8.srcs/sources_1/new/rete_32_8.vhd" \
+"../../../../rete_32_8.srcs/sim_1/new/tb_rete_32_8.vhd" \
+
+# Do not sort compile order
+nosort

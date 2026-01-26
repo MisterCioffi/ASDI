@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "secureip" --snapshot "tb_rete_32_8_behav" "xil_defaultlib.tb_rete_32_8" -log "elaborate.log" 
