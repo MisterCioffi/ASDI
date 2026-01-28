@@ -1,0 +1,4 @@
+Time resolution is 1 ps
+Failure: Testbench Moore Completato!
+Time: 140 ns  Iteration: 0  Process: /tb_double_process_Moore/stim_proc  File: /home/user/Desktop/seq_rec_111/seq_rec_111.srcs/sim_1/new/tb_double_process_Moore.vhd
+$finish called at time : 140 ns : File "/home/user/Desktop/seq_rec_111/seq_rec_111.srcs/sim_1/new/tb_double_process_Moore.vhd" Line 140
