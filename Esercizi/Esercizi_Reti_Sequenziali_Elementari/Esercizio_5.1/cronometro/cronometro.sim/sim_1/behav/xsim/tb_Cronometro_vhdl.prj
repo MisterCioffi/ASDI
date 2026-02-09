@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../cronometro.srcs/sources_1/new/Cronometro.vhd" \
+"../../../../cronometro.srcs/sources_1/new/Prescaler.vhd" \
+"../../../../../cont_mod24_mod60_load/cont_mod24_mod60_load.srcs/sources_1/new/cont_mod24_load.vhd" \
+"../../../../../cont_mod24_mod60_load/cont_mod24_mod60_load.srcs/sources_1/new/cont_mod2_load.vhd" \
+"../../../../../cont_mod24_mod60_load/cont_mod24_mod60_load.srcs/sources_1/new/cont_mod60_load.vhd" \
+"../../../../cronometro.srcs/sim_1/new/tb_cronometro.vhd" \
+
+# Do not sort compile order
+nosort

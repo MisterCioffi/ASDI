@@ -1,0 +1,4 @@
+Time resolution is 1 ps
+Failure: Simulazione Finita
+Time: 750 ns  Iteration: 0  Process: /tb_Cronometro/stim_proc  File: /home/user/Desktop/cronometro/cronometro.srcs/sim_1/new/tb_cronometro.vhd
+$finish called at time : 750 ns : File "/home/user/Desktop/cronometro/cronometro.srcs/sim_1/new/tb_cronometro.vhd" Line 109
