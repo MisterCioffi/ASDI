@@ -1,0 +1,4 @@
+Time resolution is 1 ps
+Failure: Scansione Memoria Completata!
+Time: 450 ns  Iteration: 0  Process: /tb_Sistema/stim_proc  File: /home/user/Desktop/sistema_PO_PC/sistema_PO_PC.srcs/sim_1/new/tb_Sistema.vhd
+$finish called at time : 450 ns : File "/home/user/Desktop/sistema_PO_PC/sistema_PO_PC.srcs/sim_1/new/tb_Sistema.vhd" Line 79

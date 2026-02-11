@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../sistema_PO_PC.srcs/sources_1/new/Comparatore_8bit.vhd" \
+"../../../../sistema_PO_PC.srcs/sources_1/new/Contatore_Generic.vhd" \
+"../../../../sistema_PO_PC.srcs/sources_1/new/Control_Unit.vhd" \
+"../../../../sistema_PO_PC.srcs/sources_1/new/Memoria_MEM.vhd" \
+"../../../../sistema_PO_PC.srcs/sources_1/new/Memoria_ROM.vhd" \
+"../../../../sistema_PO_PC.srcs/sources_1/new/Sistema_TopLevel1.vhd" \
+"../../../../sistema_PO_PC.srcs/sim_1/new/tb_Sistema.vhd" \
+
+# Do not sort compile order
+nosort

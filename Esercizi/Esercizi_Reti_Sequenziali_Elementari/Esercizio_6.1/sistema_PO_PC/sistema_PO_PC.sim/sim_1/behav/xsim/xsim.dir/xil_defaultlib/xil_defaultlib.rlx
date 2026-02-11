@@ -1,0 +1,11 @@
+0.7
+2020.2
+Oct 14 2022
+05:07:14
+/home/user/Desktop/sistema_PO_PC/sistema_PO_PC.srcs/sim_1/new/tb_Sistema.vhd,1770831625,vhdl,,,,tb_sistema,,,,,,,,
+/home/user/Desktop/sistema_PO_PC/sistema_PO_PC.srcs/sources_1/new/Comparatore_8bit.vhd,1770823907,vhdl,/home/user/Desktop/sistema_PO_PC/sistema_PO_PC.srcs/sources_1/new/Sistema_TopLevel1.vhd,,,comparatore_8bit,,,,,,,,
+/home/user/Desktop/sistema_PO_PC/sistema_PO_PC.srcs/sources_1/new/Contatore_Generic.vhd,1770822917,vhdl,/home/user/Desktop/sistema_PO_PC/sistema_PO_PC.srcs/sources_1/new/Sistema_TopLevel1.vhd,,,contatore_generic,,,,,,,,
+/home/user/Desktop/sistema_PO_PC/sistema_PO_PC.srcs/sources_1/new/Control_Unit.vhd,1770831486,vhdl,/home/user/Desktop/sistema_PO_PC/sistema_PO_PC.srcs/sources_1/new/Sistema_TopLevel1.vhd,,,control_unit,,,,,,,,
+/home/user/Desktop/sistema_PO_PC/sistema_PO_PC.srcs/sources_1/new/Memoria_MEM.vhd,1770822341,vhdl,/home/user/Desktop/sistema_PO_PC/sistema_PO_PC.srcs/sources_1/new/Sistema_TopLevel1.vhd,,,memoria_mem,,,,,,,,
+/home/user/Desktop/sistema_PO_PC/sistema_PO_PC.srcs/sources_1/new/Memoria_ROM.vhd,1770821927,vhdl,/home/user/Desktop/sistema_PO_PC/sistema_PO_PC.srcs/sources_1/new/Sistema_TopLevel1.vhd,,,memoria_rom,,,,,,,,
+/home/user/Desktop/sistema_PO_PC/sistema_PO_PC.srcs/sources_1/new/Sistema_TopLevel1.vhd,1770832304,vhdl,/home/user/Desktop/sistema_PO_PC/sistema_PO_PC.srcs/sim_1/new/tb_Sistema.vhd,,,sistema_toplevel,,,,,,,,
