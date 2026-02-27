@@ -1,0 +1,4 @@
+Running: xsim.dir/TB_MoltBooth8bit_behav/xsimk -simmode gui -wdb TB_MoltBooth8bit_behav.wdb -simrunnum 0 -socket 39521
+Design successfully loaded
+Design Loading Memory Usage: 331868 KB (Peak: 331868 KB)
+Design Loading CPU Usage: 70 ms

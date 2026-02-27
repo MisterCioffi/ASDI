@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/user/Desktop/MoltBooth8bit/MoltBooth8bit.srcs/sources_1/new/MoltBooth8bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MoltBooth8bit'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/user/Desktop/MoltBooth8bit/MoltBooth8bit.srcs/sim_1/new/TB_MoltBooth8bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TB_MoltBooth8bit'
