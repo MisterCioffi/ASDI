@@ -1,0 +1,5 @@
+Time resolution is 1 ps
+Note: INIZIO TEST: Verifica Identità (Input = Output)
+Time: 100 ns  Iteration: 0  Process: /tb_macchina_S/stim_proc  File: /home/user/Desktop/ese_2.2/ese_2.2.srcs/sim_1/new/tb_macchina_S.vhd
+Note: TEST COMPLETATO. Il sistema funziona come un filo perfetto!
+Time: 420 ns  Iteration: 0  Process: /tb_macchina_S/stim_proc  File: /home/user/Desktop/ese_2.2/ese_2.2.srcs/sim_1/new/tb_macchina_S.vhd

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a50ticsg324-1L" LaunchTime="1772363652">
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="macchina_S_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS" Name="macchina_S_routed.rqs"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BG-DRC" Name="macchina_S.drc"/>
+  <File Type="BG-BGN" Name="macchina_S.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="macchina_S.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="macchina_S.ltx"/>
+  <File Type="RBD_FILE" Name="macchina_S.rbd"/>
+  <File Type="NPI_FILE" Name="macchina_S.npi"/>
+  <File Type="RNPI_FILE" Name="macchina_S.rnpi"/>
+  <File Type="CFI_FILE" Name="macchina_S.cfi"/>
+  <File Type="RCFI_FILE" Name="macchina_S.rcfi"/>
+  <File Type="RDI-RDI" Name="macchina_S.vdi"/>
+  <File Type="PDI-FILE" Name="macchina_S.pdi"/>
+  <File Type="BITSTR-MMI" Name="macchina_S.mmi"/>
+  <File Type="BITSTR-BMM" Name="macchina_S_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="macchina_S.nky"/>
+  <File Type="BITSTR-RBT" Name="macchina_S.rbt"/>
+  <File Type="BITSTR-MSK" Name="macchina_S.msk"/>
+  <File Type="BG-BIN" Name="macchina_S.bin"/>
+  <File Type="BG-BIT" Name="macchina_S.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="macchina_S_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="macchina_S_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="macchina_S_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="macchina_S_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="macchina_S_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="macchina_S_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="macchina_S_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="macchina_S_postroute_physopt.dcp"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="macchina_S_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="macchina_S_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW" Name="macchina_S_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="macchina_S_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="macchina_S_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="macchina_S_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="macchina_S_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="macchina_S_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="macchina_S_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="macchina_S_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="macchina_S_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="macchina_S_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="macchina_S_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="macchina_S_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="macchina_S_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="macchina_S_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="macchina_S_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="macchina_S_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="macchina_S_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="macchina_S_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="macchina_S_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="macchina_S_routed_error.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="macchina_S_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="macchina_S_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="macchina_S_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="macchina_S_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="macchina_S_postplace_pwropt.dcp"/>
+  <File Type="PLACE-TIMING" Name="macchina_S_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="macchina_S_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="macchina_S_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="macchina_S_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="macchina_S_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="macchina_S_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="macchina_S_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="macchina_S_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="macchina_S_placed.dcp"/>
+  <File Type="PWROPT-TIMING" Name="macchina_S_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="macchina_S_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="macchina_S_pwropt.dcp"/>
+  <File Type="OPT-HWDEF" Name="macchina_S.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="macchina_S_methodology_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="macchina_S_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="macchina_S_opt.dcp"/>
+  <File Type="OPT-TIMING" Name="macchina_S_timing_summary_opted.rpt"/>
+  <File Type="REPORTS-TCL" Name="macchina_S_reports.tcl"/>
+  <File Type="INIT-TIMING" Name="macchina_S_timing_summary_init.rpt"/>
+  <File Type="PA-TCL" Name="macchina_S.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/Maccchina_M.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ROM_16_8.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Macchina_S.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="macchina_S"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/NexysA750T.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/macchina_S.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

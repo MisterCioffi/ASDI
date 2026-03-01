@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Sun Mar  1 11:15:45 2026
+# Process ID: 2776
+# Current directory: /home/user/Desktop/ese_2.2/ese_2.2.runs/impl_1
+# Command line: vivado -log macchina_S.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source macchina_S.tcl -notrace
+# Log file: /home/user/Desktop/ese_2.2/ese_2.2.runs/impl_1/macchina_S.vdi
+# Journal file: /home/user/Desktop/ese_2.2/ese_2.2.runs/impl_1/vivado.jou
+# Running On: 06618bb3b88b, OS: Linux, CPU Frequency: 2502.057 MHz, CPU Physical cores: 1, Host memory: 5157 MB
+#-----------------------------------------------------------
+source macchina_S.tcl -notrace
