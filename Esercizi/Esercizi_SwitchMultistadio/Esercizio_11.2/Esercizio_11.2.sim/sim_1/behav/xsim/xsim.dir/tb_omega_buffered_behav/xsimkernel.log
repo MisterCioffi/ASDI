@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_omega_buffered_behav/xsimk.exe -simmode gui -wdb tb_omega_buffered_behav.wdb -simrunnum 0 -socket 54358
+Design successfully loaded
+Design Loading Memory Usage: 8088 KB (Peak: 8088 KB)
+Design Loading CPU Usage: 78 ms
+Simulation completed
+Simulation Memory Usage: 8716 KB (Peak: 8716 KB)
+Simulation CPU Usage: 78 ms

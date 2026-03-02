@@ -1,0 +1,23 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Users/anton/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 305d0cce7da64aa18fc067a181bb846b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_omega_buffered_behav xil_defaultlib.tb_omega_buffered -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.omega_pkg
+Compiling architecture behavioral of entity xil_defaultlib.counter_mod4 [counter_mod4_default]
+Compiling architecture behavioral of entity xil_defaultlib.counter_updown_4 [counter_updown_4_default]
+Compiling architecture structural of entity xil_defaultlib.fifo_4 [fifo_4_default]
+Compiling architecture behavioral of entity xil_defaultlib.switch_2x2_buffered [\switch_2x2_buffered(stage_bit=2...]
+Compiling architecture behavioral of entity xil_defaultlib.switch_2x2_buffered [\switch_2x2_buffered(stage_bit=1...]
+Compiling architecture behavioral of entity xil_defaultlib.switch_2x2_buffered [\switch_2x2_buffered(stage_bit=0...]
+Compiling architecture structural of entity xil_defaultlib.omega_network_buffered [omega_network_buffered_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_omega_buffered
+Built simulation snapshot tb_omega_buffered_behav

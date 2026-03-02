@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Mar  2 15:46:52 2026
+# Process ID: 19820
+# Current directory: C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Reti_Sequenziali_Elementari/Esercizio_5.2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11644 C:\Users\anton\Desktop\ASDI\Esercizi\Esercizi_Reti_Sequenziali_Elementari\Esercizio_5.2\Esercizio_5.2.xpr
+# Log file: C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Reti_Sequenziali_Elementari/Esercizio_5.2/vivado.log
+# Journal file: C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Reti_Sequenziali_Elementari/Esercizio_5.2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Reti_Sequenziali_Elementari/Esercizio_5.2/Esercizio_5.2.xpr
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Reti_Sequenziali_Elementari/Esercizio_5.2/Esercizio_5.2.runs/impl_1/Cronometro_Board.bit} [get_hw_devices xc7a50t_0]
+current_hw_device [get_hw_devices xc7a50t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a50t_0] 0]
+update_compile_order -fileset sources_1
+set_property PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property PROGRAM.FILE {C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Reti_Sequenziali_Elementari/Esercizio_5.2/Esercizio_5.2.runs/impl_1/Cronometro_Board.bit} [get_hw_devices xc7a50t_0]
+program_hw_devices [get_hw_devices xc7a50t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a50t_0] 0]
