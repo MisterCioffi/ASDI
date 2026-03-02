@@ -1,0 +1,120 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Mon Mar  2 11:20:06 2026
+| Host         : drims-pc running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Cronometro_Board_control_sets_placed.rpt
+| Design       : Cronometro_Board
+| Device       : xc7a50ti
+---------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    42 |
+|    Minimum number of control sets                        |    42 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   281 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    42 |
+| >= 0 to < 4        |    39 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     2 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               4 |            2 |
+| No           | No                    | Yes                    |              56 |           36 |
+| No           | Yes                   | No                     |              27 |           15 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------------+---------------+---------------------------------------------+------------------+----------------+--------------+
+|                 Clock Signal                 | Enable Signal |               Set/Reset Signal              | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------------------------------------+---------------+---------------------------------------------+------------------+----------------+--------------+
+| ~UUT/CNT_SEC/CONT_4/Y_reg_reg_0[0]           |               | UUT/CNT_SEC/CONT_2/Y_reg_reg_0              |                1 |              1 |         1.00 |
+| ~UUT/CNT_SEC/CONT_5/COUT                     |               | UUT/CNT_MIN/CONT_5/BTNU_8                   |                1 |              1 |         1.00 |
+| ~UUT/CNT_SEC/CONT_5/COUT                     |               | UUT/CNT_MIN/CONT_5/BTNU                     |                1 |              1 |         1.00 |
+| ~UUT/CNT_SEC/CONT_1/sec_bin__0[0]            |               | UUT/CNT_SEC/CONT_2/Y_reg_reg_0              |                1 |              1 |         1.00 |
+| ~UUT/CNT_SEC/CONT_3/Y_reg_reg_0[0]           |               | UUT/CNT_SEC/CONT_2/Y_reg_reg_0              |                1 |              1 |         1.00 |
+|  UUT/CNT_ORE/CONT_4/BTNC_5                   |               | UUT/CNT_ORE/CONT_4/SW[6]                    |                1 |              1 |         1.00 |
+| ~UUT/DIVISORE/clock_lento                    |               | UUT/CNT_SEC/CONT_2/Y_reg_reg_0              |                1 |              1 |         1.00 |
+|  UUT/CNT_ORE/CONT_4/BTNC_4                   |               | UUT/CNT_ORE/CONT_4/BTNC                     |                1 |              1 |         1.00 |
+|  UUT/CNT_ORE/CONT_4/BTNC_3                   |               | UUT/CNT_ORE/CONT_4/BTNC_0                   |                1 |              1 |         1.00 |
+|  UUT/CNT_ORE/CONT_4/BTNC_2                   |               | UUT/CNT_ORE/CONT_4/BTNC_1                   |                1 |              1 |         1.00 |
+| ~UUT/CNT_SEC/CONT_2/sec_bin[0]               |               | UUT/CNT_SEC/CONT_2/Y_reg_reg_0              |                1 |              1 |         1.00 |
+|  UUT/CNT_ORE/CONT_4/Y_reg_reg_LDC_i_1_n_0    |               | UUT/CNT_ORE/CONT_4/Y_reg_reg_LDC_i_2__3_n_0 |                1 |              1 |         1.00 |
+| ~UUT/CNT_ORE/CONT_0/ore_bin__0[0]            |               | UUT/CNT_ORE/CONT_4/BTNC_4                   |                1 |              1 |         1.00 |
+| ~UUT/CNT_ORE/CONT_0/ore_bin__0[0]            |               | UUT/CNT_ORE/CONT_4/BTNC                     |                1 |              1 |         1.00 |
+| ~UUT/CNT_ORE/CONT_2/ore_bin__0[0]            |               | UUT/CNT_ORE/CONT_4/BTNC_1                   |                1 |              1 |         1.00 |
+| ~UUT/CNT_ORE/CONT_2/ore_bin__0[0]            |               | UUT/CNT_ORE/CONT_4/BTNC_2                   |                1 |              1 |         1.00 |
+| ~UUT/CNT_ORE/CONT_1/Y_reg_reg_P_0[0]         |               | UUT/CNT_ORE/CONT_4/BTNC_3                   |                1 |              1 |         1.00 |
+| ~UUT/CNT_ORE/CONT_1/Y_reg_reg_P_0[0]         |               | UUT/CNT_ORE/CONT_4/BTNC_0                   |                1 |              1 |         1.00 |
+| ~UUT/CNT_ORE/CONT_3/Y_reg_reg_P_1[0]         |               | UUT/CNT_ORE/CONT_4/Y_reg_reg_LDC_i_2__3_n_0 |                1 |              1 |         1.00 |
+| ~UUT/CNT_ORE/CONT_3/Y_reg_reg_P_1[0]         |               | UUT/CNT_ORE/CONT_4/Y_reg_reg_LDC_i_1_n_0    |                1 |              1 |         1.00 |
+| ~UUT/CNT_MIN/CONT_0/min_bin__0[0]            |               | UUT/CNT_MIN/CONT_5/BTNU_7                   |                1 |              1 |         1.00 |
+| ~UUT/CNT_MIN/CONT_0/min_bin__0[0]            |               | UUT/CNT_MIN/CONT_5/BTNU_0                   |                1 |              1 |         1.00 |
+| ~UUT/CNT_MIN/CONT_2/min_bin[0]               |               | UUT/CNT_MIN/CONT_5/BTNU_5                   |                1 |              1 |         1.00 |
+| ~UUT/CNT_MIN/CONT_2/min_bin[0]               |               | UUT/CNT_MIN/CONT_5/BTNU_2                   |                1 |              1 |         1.00 |
+| ~UUT/CNT_MIN/CONT_1/Y_reg_reg_P_0[0]         |               | UUT/CNT_MIN/CONT_5/BTNU_1                   |                1 |              1 |         1.00 |
+| ~UUT/CNT_MIN/CONT_1/Y_reg_reg_P_0[0]         |               | UUT/CNT_MIN/CONT_5/BTNU_6                   |                1 |              1 |         1.00 |
+| ~UUT/CNT_MIN/CONT_3/Y_reg_reg_P_0[0]         |               | UUT/CNT_MIN/CONT_5/BTNU_3                   |                1 |              1 |         1.00 |
+| ~UUT/CNT_MIN/CONT_3/Y_reg_reg_P_0[0]         |               | UUT/CNT_MIN/CONT_5/BTNU_4                   |                1 |              1 |         1.00 |
+| ~UUT/CNT_SEC/CONT_0/Y_reg_reg_0[0]           |               | UUT/CNT_SEC/CONT_2/Y_reg_reg_0              |                1 |              1 |         1.00 |
+| ~UUT/CNT_MIN/CONT_4/Y_reg_reg_P_0[0]         |               | UUT/CNT_MIN/CONT_5/Y_reg_reg_LDC_i_2__4_n_0 |                1 |              1 |         1.00 |
+| ~UUT/CNT_MIN/CONT_4/Y_reg_reg_P_0[0]         |               | UUT/CNT_MIN/CONT_5/Y_reg_reg_LDC_i_1__9_n_0 |                1 |              1 |         1.00 |
+|  UUT/CNT_MIN/CONT_5/BTNU_1                   |               | UUT/CNT_MIN/CONT_5/BTNU_6                   |                1 |              1 |         1.00 |
+| ~UUT/CNT_MIN/CONT_5/Y_reg_reg_P_0            |               | UUT/CNT_ORE/CONT_4/BTNC_5                   |                1 |              1 |         1.00 |
+| ~UUT/CNT_MIN/CONT_5/Y_reg_reg_P_0            |               | UUT/CNT_ORE/CONT_4/SW[6]                    |                1 |              1 |         1.00 |
+|  UUT/CNT_MIN/CONT_5/BTNU_0                   |               | UUT/CNT_MIN/CONT_5/BTNU_7                   |                1 |              1 |         1.00 |
+|  UUT/CNT_MIN/CONT_5/BTNU_3                   |               | UUT/CNT_MIN/CONT_5/BTNU_4                   |                1 |              1 |         1.00 |
+|  UUT/CNT_MIN/CONT_5/Y_reg_reg_LDC_i_1__9_n_0 |               | UUT/CNT_MIN/CONT_5/Y_reg_reg_LDC_i_2__4_n_0 |                1 |              1 |         1.00 |
+|  UUT/CNT_MIN/CONT_5/BTNU_2                   |               | UUT/CNT_MIN/CONT_5/BTNU_5                   |                1 |              1 |         1.00 |
+|  UUT/CNT_MIN/CONT_5/BTNU                     |               | UUT/CNT_MIN/CONT_5/BTNU_8                   |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG                         |               |                                             |                2 |              4 |         2.00 |
+|  CLK100MHZ_IBUF_BUFG                         |               | refresh_cnt[16]_i_1_n_0                     |                4 |             16 |         4.00 |
+|  CLK100MHZ_IBUF_BUFG                         |               | BTNU_IBUF                                   |                8 |             28 |         3.50 |
++----------------------------------------------+---------------+---------------------------------------------+------------------+----------------+--------------+
+
+

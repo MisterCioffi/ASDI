@@ -1,0 +1,255 @@
+
+*** Running vivado
+    with args -log Cronometro_Board.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Cronometro_Board.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source Cronometro_Board.tcl -notrace
+Command: synth_design -top Cronometro_Board -part xc7a50ticsg324-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a50ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a50ti'
+INFO: [Device 21-403] Loading part xc7a50ticsg324-1L
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 13296
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1002.723 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Cronometro_Board' [C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Reti_Sequenziali_Elementari/Esercizio_5.2/Esercizio_5.2.srcs/sources_1/new/Cronometro_Board.vhd:19]
+INFO: [Synth 8-3491] module 'Cronometro' declared at 'C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Reti_Sequenziali_Elementari/Esercizio_5.1/cronometro/cronometro.srcs/sources_1/new/Cronometro.vhd:25' bound to instance 'UUT' of component 'Cronometro' [C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Reti_Sequenziali_Elementari/Esercizio_5.2/Esercizio_5.2.srcs/sources_1/new/Cronometro_Board.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'Cronometro' [C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Reti_Sequenziali_Elementari/Esercizio_5.1/cronometro/cronometro.srcs/sources_1/new/Cronometro.vhd:43]
+	Parameter CLOCK_FREQ bound to: 100000000 - type: integer 
+INFO: [Synth 8-3491] module 'Prescaler' declared at 'C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Reti_Sequenziali_Elementari/Esercizio_5.1/cronometro/cronometro.srcs/sources_1/new/Prescaler.vhd:5' bound to instance 'DIVISORE' of component 'Prescaler' [C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Reti_Sequenziali_Elementari/Esercizio_5.1/cronometro/cronometro.srcs/sources_1/new/Cronometro.vhd:75]
+INFO: [Synth 8-638] synthesizing module 'Prescaler' [C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Reti_Sequenziali_Elementari/Esercizio_5.1/cronometro/cronometro.srcs/sources_1/new/Prescaler.vhd:14]
+	Parameter CLOCK_FREQ bound to: 100000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Prescaler' (1#1) [C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Reti_Sequenziali_Elementari/Esercizio_5.1/cronometro/cronometro.srcs/sources_1/new/Prescaler.vhd:14]
+INFO: [Synth 8-3491] module 'cont_mod60_load' declared at 'C:/Users/anton/Desktop/ASDI/Appendice/cont.mod60_load.vhd:4' bound to instance 'CNT_SEC' of component 'cont_mod60_load' [C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Reti_Sequenziali_Elementari/Esercizio_5.1/cronometro/cronometro.srcs/sources_1/new/Cronometro.vhd:81]
+INFO: [Synth 8-638] synthesizing module 'cont_mod60_load' [C:/Users/anton/Desktop/ASDI/Appendice/cont.mod60_load.vhd:15]
+INFO: [Synth 8-3491] module 'cont_mod2_load' declared at 'C:/Users/anton/Desktop/ASDI/Appendice/cont_mod2_load.vhd:4' bound to instance 'CONT_0' of component 'cont_mod2_load' [C:/Users/anton/Desktop/ASDI/Appendice/cont.mod60_load.vhd:33]
+INFO: [Synth 8-638] synthesizing module 'cont_mod2_load' [C:/Users/anton/Desktop/ASDI/Appendice/cont_mod2_load.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'cont_mod2_load' (2#1) [C:/Users/anton/Desktop/ASDI/Appendice/cont_mod2_load.vhd:14]
+INFO: [Synth 8-3491] module 'cont_mod2_load' declared at 'C:/Users/anton/Desktop/ASDI/Appendice/cont_mod2_load.vhd:4' bound to instance 'CONT_1' of component 'cont_mod2_load' [C:/Users/anton/Desktop/ASDI/Appendice/cont.mod60_load.vhd:34]
+INFO: [Synth 8-3491] module 'cont_mod2_load' declared at 'C:/Users/anton/Desktop/ASDI/Appendice/cont_mod2_load.vhd:4' bound to instance 'CONT_2' of component 'cont_mod2_load' [C:/Users/anton/Desktop/ASDI/Appendice/cont.mod60_load.vhd:35]
+INFO: [Synth 8-3491] module 'cont_mod2_load' declared at 'C:/Users/anton/Desktop/ASDI/Appendice/cont_mod2_load.vhd:4' bound to instance 'CONT_3' of component 'cont_mod2_load' [C:/Users/anton/Desktop/ASDI/Appendice/cont.mod60_load.vhd:36]
+INFO: [Synth 8-3491] module 'cont_mod2_load' declared at 'C:/Users/anton/Desktop/ASDI/Appendice/cont_mod2_load.vhd:4' bound to instance 'CONT_4' of component 'cont_mod2_load' [C:/Users/anton/Desktop/ASDI/Appendice/cont.mod60_load.vhd:37]
+INFO: [Synth 8-3491] module 'cont_mod2_load' declared at 'C:/Users/anton/Desktop/ASDI/Appendice/cont_mod2_load.vhd:4' bound to instance 'CONT_5' of component 'cont_mod2_load' [C:/Users/anton/Desktop/ASDI/Appendice/cont.mod60_load.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'cont_mod60_load' (3#1) [C:/Users/anton/Desktop/ASDI/Appendice/cont.mod60_load.vhd:15]
+INFO: [Synth 8-3491] module 'cont_mod60_load' declared at 'C:/Users/anton/Desktop/ASDI/Appendice/cont.mod60_load.vhd:4' bound to instance 'CNT_MIN' of component 'cont_mod60_load' [C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Reti_Sequenziali_Elementari/Esercizio_5.1/cronometro/cronometro.srcs/sources_1/new/Cronometro.vhd:88]
+INFO: [Synth 8-3491] module 'cont_mod24' declared at 'C:/Users/anton/Desktop/ASDI/Appendice/cont_mod_24_load.vhd:13' bound to instance 'CNT_ORE' of component 'cont_mod24' [C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Reti_Sequenziali_Elementari/Esercizio_5.1/cronometro/cronometro.srcs/sources_1/new/Cronometro.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'cont_mod24' [C:/Users/anton/Desktop/ASDI/Appendice/cont_mod_24_load.vhd:23]
+INFO: [Synth 8-3491] module 'cont_mod2_load' declared at 'C:/Users/anton/Desktop/ASDI/Appendice/cont_mod2_load.vhd:4' bound to instance 'CONT_0' of component 'cont_mod2_load' [C:/Users/anton/Desktop/ASDI/Appendice/cont_mod_24_load.vhd:45]
+INFO: [Synth 8-3491] module 'cont_mod2_load' declared at 'C:/Users/anton/Desktop/ASDI/Appendice/cont_mod2_load.vhd:4' bound to instance 'CONT_1' of component 'cont_mod2_load' [C:/Users/anton/Desktop/ASDI/Appendice/cont_mod_24_load.vhd:49]
+INFO: [Synth 8-3491] module 'cont_mod2_load' declared at 'C:/Users/anton/Desktop/ASDI/Appendice/cont_mod2_load.vhd:4' bound to instance 'CONT_2' of component 'cont_mod2_load' [C:/Users/anton/Desktop/ASDI/Appendice/cont_mod_24_load.vhd:53]
+INFO: [Synth 8-3491] module 'cont_mod2_load' declared at 'C:/Users/anton/Desktop/ASDI/Appendice/cont_mod2_load.vhd:4' bound to instance 'CONT_3' of component 'cont_mod2_load' [C:/Users/anton/Desktop/ASDI/Appendice/cont_mod_24_load.vhd:57]
+INFO: [Synth 8-3491] module 'cont_mod2_load' declared at 'C:/Users/anton/Desktop/ASDI/Appendice/cont_mod2_load.vhd:4' bound to instance 'CONT_4' of component 'cont_mod2_load' [C:/Users/anton/Desktop/ASDI/Appendice/cont_mod_24_load.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'cont_mod24' (4#1) [C:/Users/anton/Desktop/ASDI/Appendice/cont_mod_24_load.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'Cronometro' (5#1) [C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Reti_Sequenziali_Elementari/Esercizio_5.1/cronometro/cronometro.srcs/sources_1/new/Cronometro.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'Cronometro_Board' (6#1) [C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Reti_Sequenziali_Elementari/Esercizio_5.2/Esercizio_5.2.srcs/sources_1/new/Cronometro_Board.vhd:19]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1002.723 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1002.723 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1002.723 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1002.723 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Reti_Sequenziali_Elementari/Esercizio_5.2/Esercizio_5.2.srcs/constrs_1/new/cronometro_vincoli.xdc]
+Finished Parsing XDC File [C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Reti_Sequenziali_Elementari/Esercizio_5.2/Esercizio_5.2.srcs/constrs_1/new/cronometro_vincoli.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Reti_Sequenziali_Elementari/Esercizio_5.2/Esercizio_5.2.srcs/constrs_1/new/cronometro_vincoli.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Cronometro_Board_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Cronometro_Board_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1002.723 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1002.723 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1002.723 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a50ticsg324-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1002.723 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1002.723 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1002.723 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   17 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 18    
++---Muxes : 
+	   2 Input   17 Bit        Muxes := 1     
+	   7 Input    8 Bit        Muxes := 1     
+	   7 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 51    
+	  10 Input    1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1002.723 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 1002.723 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1012.629 ; gain = 9.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 1013.191 ; gain = 10.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 1019.961 ; gain = 17.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 1019.961 ; gain = 17.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 1019.961 ; gain = 17.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 1019.961 ; gain = 17.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 1019.961 ; gain = 17.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 1019.961 ; gain = 17.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    11|
+|3     |LUT1   |     6|
+|4     |LUT2   |    29|
+|5     |LUT3   |    40|
+|6     |LUT4   |    21|
+|7     |LUT5   |    15|
+|8     |LUT6   |    19|
+|9     |FDCE   |    45|
+|10    |FDPE   |    11|
+|11    |FDRE   |    20|
+|12    |LDC    |    11|
+|13    |IBUF   |    14|
+|14    |OBUF   |    16|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 1019.961 ; gain = 17.238
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:41 . Memory (MB): peak = 1019.961 ; gain = 17.238
+Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 1019.961 ; gain = 17.238
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1031.914 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 22 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1031.914 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 11 instances were transformed.
+  LDC => LDCE: 11 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+43 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:50 ; elapsed = 00:00:58 . Memory (MB): peak = 1031.914 ; gain = 29.191
+INFO: [Common 17-1381] The checkpoint 'C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Reti_Sequenziali_Elementari/Esercizio_5.2/Esercizio_5.2.runs/synth_1/Cronometro_Board.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Cronometro_Board_utilization_synth.rpt -pb Cronometro_Board_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Mar  2 11:19:07 2026...

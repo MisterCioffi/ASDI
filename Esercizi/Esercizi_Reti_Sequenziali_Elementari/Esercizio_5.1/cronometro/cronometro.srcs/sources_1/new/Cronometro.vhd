@@ -73,7 +73,7 @@ begin
     -- IMPORTANTE: CLOCK_FREQ => 10 significa che conta fino a 10 e poi genera 1 secondo.
     -- Per la scheda reale metti 50000000 o 100000000.
     DIVISORE: Prescaler 
-        generic map ( CLOCK_FREQ => 10 ) 
+        generic map ( CLOCK_FREQ => 100_000_000 ) 
         port map ( clk_in => CLK_BOARD, reset => RST_BTN, pulse_1s => tick_1s );
 
     -- ISTANZA SECONDI
