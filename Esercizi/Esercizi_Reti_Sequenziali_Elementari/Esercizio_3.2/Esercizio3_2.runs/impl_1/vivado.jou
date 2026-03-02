@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Mar  2 10:43:05 2026
+# Process ID: 12100
+# Current directory: C:/Users/anton/Desktop/vivado/Progetto ASDI/2-Reti Sequenziali/Esercizio3_2/Esercizio3_2.runs/impl_1
+# Command line: vivado.exe -log board_riconoscitore.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source board_riconoscitore.tcl -notrace
+# Log file: C:/Users/anton/Desktop/vivado/Progetto ASDI/2-Reti Sequenziali/Esercizio3_2/Esercizio3_2.runs/impl_1/board_riconoscitore.vdi
+# Journal file: C:/Users/anton/Desktop/vivado/Progetto ASDI/2-Reti Sequenziali/Esercizio3_2/Esercizio3_2.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source board_riconoscitore.tcl -notrace
