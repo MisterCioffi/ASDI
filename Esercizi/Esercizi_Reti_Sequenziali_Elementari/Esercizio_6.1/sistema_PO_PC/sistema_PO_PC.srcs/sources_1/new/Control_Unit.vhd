@@ -66,7 +66,7 @@ begin
     -- PROCESSO 2: LOGICA DEL PROSSIMO STATO E DELLE USCITE (Combinatorio)
     -- Si sveglia ogni volta che cambia uno stato o un ingresso.
     -- =========================================================================
-    comb_proc: process(current_state, START, MATCH, END_COUNT)
+    comb_proc: process(current_state, START, STABILIZE, MATCH, END_COUNT)
     begin
         -- VALORI DI DEFAULT DELLE USCITE (Fondamentale per evitare i Latch!)
         -- All'inizio del processo, spegniamo tutto. Così negli stati dovremo 
@@ -90,10 +90,16 @@ begin
 
             -------------------------------------------------------------------
             when READ_ROM =>
-                ROM_EN <= '1'; -- Ordiniamo alla ROM di leggere
-                
-                -- Transizione incondizionata: al prossimo clock andremo sempre in EVALUATE
-                next_state <= EVALUATE; 
+                ROM_EN <= '1'; 
+                next_state <= STABILIZE; 
+
+            -------------------------------------------------------------------
+            -- STABILIZE: Stato di "bolla". 
+            -- Qui la ROM ha i dati pronti e il comparatore sta calcolando il MATCH.
+            -- Aspettiamo un colpo di clock per essere sicuri che MATCH sia stabile.
+            -------------------------------------------------------------------
+            when STABILIZE =>
+                next_state <= EVALUATE;
 
             -------------------------------------------------------------------
             when EVALUATE =>
