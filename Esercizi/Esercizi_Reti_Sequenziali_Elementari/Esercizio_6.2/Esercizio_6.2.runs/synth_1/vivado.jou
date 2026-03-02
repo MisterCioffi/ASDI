@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Mar  2 14:53:34 2026
+# Process ID: 19164
+# Current directory: C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Reti_Sequenziali_Elementari/Esercizio_6.2/Esercizio_6.2.runs/synth_1
+# Command line: vivado.exe -log Sistema_TopLevel.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Sistema_TopLevel.tcl
+# Log file: C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Reti_Sequenziali_Elementari/Esercizio_6.2/Esercizio_6.2.runs/synth_1/Sistema_TopLevel.vds
+# Journal file: C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Reti_Sequenziali_Elementari/Esercizio_6.2/Esercizio_6.2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Sistema_TopLevel.tcl -notrace
