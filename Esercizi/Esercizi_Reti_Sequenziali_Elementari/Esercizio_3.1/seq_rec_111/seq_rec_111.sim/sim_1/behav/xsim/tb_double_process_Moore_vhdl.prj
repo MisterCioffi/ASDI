@@ -1,7 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../seq_rec_111.srcs/sources_1/new/double_process_Moore.vhd" \
-"../../../../seq_rec_111.srcs/sim_1/new/tb_double_process_Moore.vhd" \
-
-# Do not sort compile order
-nosort
