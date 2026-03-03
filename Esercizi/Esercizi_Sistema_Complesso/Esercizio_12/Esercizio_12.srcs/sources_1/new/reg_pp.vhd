@@ -1,0 +1,29 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity reg_pp is
+    Generic (
+        N : integer := 8
+    );
+    Port (
+        clk   : in  STD_LOGIC;
+        reset : in  STD_LOGIC;
+        load  : in  STD_LOGIC;
+        d     : in  STD_LOGIC_VECTOR(N-1 downto 0);
+        q     : out STD_LOGIC_VECTOR(N-1 downto 0)
+    );
+end reg_pp;
+
+architecture Behavioral of reg_pp is
+begin
+    process(clk)
+    begin
+        if rising_edge(clk) then
+            if reset = '1' then
+                q <= (others => '0');
+            elsif load = '1' then
+                q <= d;
+            end if;
+        end if;
+    end process;
+end Behavioral;

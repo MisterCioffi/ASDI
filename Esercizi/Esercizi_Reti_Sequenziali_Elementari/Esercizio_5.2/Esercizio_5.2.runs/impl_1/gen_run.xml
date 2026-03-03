@@ -16,9 +16,12 @@
   <File Type="BITSTR-BMM" Name="Cronometro_Board_bd.bmm"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="Cronometro_Board_methodology_drc_routed.rpt"/>
   <File Type="BITSTR-MMI" Name="Cronometro_Board.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Cronometro_Board_methodology_drc_routed.pb"/>
   <File Type="BITSTR-SYSDEF" Name="Cronometro_Board.sysdef"/>
+  <File Type="ROUTE-DRC-RPX" Name="Cronometro_Board_drc_routed.rpx"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="Cronometro_Board.ltx"/>
+  <File Type="RCFI_FILE" Name="Cronometro_Board.rcfi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="OPT-DRC" Name="Cronometro_Board_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="Cronometro_Board.hwdef"/>
@@ -48,11 +51,8 @@
   <File Type="PHYSOPT-DCP" Name="Cronometro_Board_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="Cronometro_Board_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Cronometro_Board_postroute_physopt_bb.dcp"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Cronometro_Board_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="Cronometro_Board_drc_routed.rpx"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Cronometro_Board_methodology_drc_routed.rpx"/>
   <File Type="PDI-FILE" Name="Cronometro_Board.pdi"/>
-  <File Type="RCFI_FILE" Name="Cronometro_Board.rcfi"/>
   <File Type="CFI_FILE" Name="Cronometro_Board.cfi"/>
   <File Type="RNPI_FILE" Name="Cronometro_Board.rnpi"/>
   <File Type="NPI_FILE" Name="Cronometro_Board.npi"/>
@@ -130,5 +130,6 @@
     <Step Id="route_design"/>
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
   </Strategy>
 </GenRun>
