@@ -141,7 +141,7 @@ begin
             clk => clk,
             reset => rst,
             load => load_RA,
-            d => product(7 downto 0), 
+            d => product, 
             q => product_out
         );
 

@@ -6,6 +6,7 @@ entity unita_operativa is
 	port( X, Y: in std_logic_vector(3 downto 0);--moltiplicatore e moltiplicando
 		  clock, reset: in std_logic;
 		  loadAQ, shift, loadM, sub, selM, selAQ, selF, count_in: in std_logic;
+		  reset_init: in std_logic;
 		  count: out std_logic_vector(1 downto 0);
 		  P: out std_logic_vector(7 downto 0));
 end unita_operativa;
@@ -64,8 +65,13 @@ architecture structural of unita_operativa is
 	signal AQ_sum_in : std_logic_vector(7 downto 0); 
 	signal riporto: std_logic; -- riporto in uscita dell'adder che non utilizziamo
 	signal  SRserialIn: std_logic;
+	signal internal_reset : std_logic;
 	
 begin
+
+	-- il reset interno alla UO � dato dalla OR tra il reset esterno e il reset_init generato dalla UC all'inizio di ogni operazione di moltiplicazione
+	-- sostituzione di 'reset' con 'internal_reset' SOLO in D e CONT
+	internal_reset <= reset or reset_init;
 	
 	-- 1) predisposizione del secondo operando della somma: 
 	
@@ -94,7 +100,7 @@ begin
     
     --segnale che rappresenta il contenuto del latch D
 	temp_d <= (Mreg(3) and AQ_out(0)) or temp_F;
-	D: FFD port map(clock, reset, temp_d, temp_F);
+	D: FFD port map(clock, internal_reset, temp_d, temp_F);
 	
 	SRserialIn <= temp_F when selF = '0' else AQ_out(7);
   	
@@ -107,7 +113,7 @@ begin
 	ADD_SUB: adder_sub port map(AQ_out(7 downto 4), op2, sub, sum, riporto);
 	
 	-- 6) contatore
-	CONT: cont_mod4 port map(clock, reset, count_in, count);
+	CONT: cont_mod4 port map(clock, internal_reset, count_in, count);
 	
 	--7) uscita del moltiplicatore, corrispondente al valore contenuto nello shift register
 

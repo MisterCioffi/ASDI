@@ -42,10 +42,10 @@ architecture Behavioral of Memoria_ROM is
     type rom_type is array (0 to 15) of std_logic_vector(3 downto 0);
 
     constant ROM_CONTENT : rom_type := (
-        0 => x"F",
-        1 => x"F", 
-        2 => x"2",
-        3 => x"4", 
+        0 => x"E",
+        1 => x"C", 
+        2 => x"D",
+        3 => x"2", 
         others => x"0" -- Riempe il resto a zero
     );
 

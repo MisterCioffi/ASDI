@@ -100,17 +100,17 @@ begin
 
         -- 2. Diamo l'impulso di START al Nodo A
         -- Assicurati che l'impulso sia abbastanza lungo da essere letto 
-        -- dal clock di A, indipendentemente dalla sua velocità.
+        -- dal clock di A, indipendentemente dalla sua velocitï¿½.
         start <= '1';
         wait for CLK_A_PERIOD * 2; 
         start <= '0';
 
-        -- A questo punto il sistema è autonomo. 
-        -- La CU di A leggerà gli indirizzi 0 e 1, moltiplicherà, 
-        -- manderà il dato a B tramite handshaking,
-        -- e poi passerà automaticamente agli indirizzi 2 e 3 (Scenario Negativo).
+        -- A questo punto il sistema ï¿½ autonomo. 
+        -- La CU di A leggerï¿½ gli indirizzi 0 e 1, moltiplicherï¿½, 
+        -- manderï¿½ il dato a B tramite handshaking,
+        -- e poi passerï¿½ automaticamente agli indirizzi 2 e 3 (Scenario Negativo).
         
-        wait for 2000 ns; -- Tempo sufficiente per completare più cicli
+        wait for 2000 ns; -- Tempo sufficiente per completare piï¿½ cicli
         
         wait;
     end process;

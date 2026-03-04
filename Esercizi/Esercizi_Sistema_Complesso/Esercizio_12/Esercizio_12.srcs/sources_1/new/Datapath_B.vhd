@@ -87,7 +87,7 @@ architecture Structural of Datapath_B is
     end component;
 
     signal output_reg_b : STD_LOGIC_VECTOR(7 downto 0);
-    signal value_x : STD_LOGIC_VECTOR(7 downto 0) := x"AA"; -- Valore costante da confrontare con il registro B
+    signal value_x : STD_LOGIC_VECTOR(7 downto 0); -- Valore costante da confrontare con il registro B
 
 begin
 
@@ -117,9 +117,9 @@ begin
         )
         port map (
             clk => clk,
-            reset => rst,
-            load => '0', -- Non carichiamo mai questo registro
-            d => (others => '0'), -- Non ci interessa il dato in ingresso, rimane a zero
+            reset => '0',
+            load => '1', 
+            d => x"05", 
             q => value_x
         );
 

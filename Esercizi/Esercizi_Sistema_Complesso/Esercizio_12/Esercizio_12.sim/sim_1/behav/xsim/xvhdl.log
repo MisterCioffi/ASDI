@@ -1,2 +1,50 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Sistema_Complesso/Esercizio_12/Esercizio_12.srcs/sources_1/new/Comparatore_8bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Comparatore_8bit'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Sistema_Complesso/Esercizio_12/Esercizio_12.srcs/sources_1/new/Contatore_mod16.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Contatore_mod16'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Sistema_Complesso/Esercizio_12/Esercizio_12.srcs/sources_1/new/Contatore_mod8.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Contatore_mod8'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Sistema_Complesso/Esercizio_12/Esercizio_12.srcs/sources_1/new/Datapath_A.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Datapath_A'
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Sistema_Complesso/Esercizio_12/Esercizio_12.srcs/sources_1/new/Datapath_B.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'Datapath_B'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Sistema_Complesso/Esercizio_12/Esercizio_12.srcs/sources_1/imports/new/FFD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FFD'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Sistema_Complesso/Esercizio_12/Esercizio_12.srcs/sources_1/imports/new/Memoria_MEM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Memoria_MEM'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Sistema_Complesso/Esercizio_12/Esercizio_12.srcs/sources_1/imports/new/Memoria_ROM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Memoria_ROM'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Sistema_Complesso/Esercizio_12/Esercizio_12.srcs/sources_1/new/Nodo_A.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Nodo_A'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Sistema_Complesso/Esercizio_12/Esercizio_12.srcs/sources_1/new/Nodo_B.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Nodo_B'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Sistema_Complesso/Esercizio_12/Esercizio_12.srcs/sources_1/new/Sistema_Complesso.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Sistema_Complesso'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Sistema_Complesso/Esercizio_12/Esercizio_12.srcs/sources_1/imports/new/adder_sub.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'adder_sub'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Sistema_Complesso/Esercizio_12/Esercizio_12.srcs/sources_1/imports/new/cont_mod4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'cont_mod4'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Sistema_Complesso/Esercizio_12/Esercizio_12.srcs/sources_1/new/control_unit_A.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'control_unit_A'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Sistema_Complesso/Esercizio_12/Esercizio_12.srcs/sources_1/new/control_unit_B.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'control_unit_B'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Sistema_Complesso/Esercizio_12/Esercizio_12.srcs/sources_1/imports/new/full_adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'full_adder'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Sistema_Complesso/Esercizio_12/Esercizio_12.srcs/sources_1/imports/new/molt_rob.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'molt_rob'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Sistema_Complesso/Esercizio_12/Esercizio_12.srcs/sources_1/imports/new/mux_21.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mux_21'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Sistema_Complesso/Esercizio_12/Esercizio_12.srcs/sources_1/new/reg_pp.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'reg_pp'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Sistema_Complesso/Esercizio_12/Esercizio_12.srcs/sources_1/imports/new/registro4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'registro4'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Sistema_Complesso/Esercizio_12/Esercizio_12.srcs/sources_1/imports/new/ripple_carry.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ripple_carry'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Sistema_Complesso/Esercizio_12/Esercizio_12.srcs/sources_1/imports/new/shift_register.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'shift_register'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Sistema_Complesso/Esercizio_12/Esercizio_12.srcs/sources_1/imports/new/unita_controllo.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'unita_controllo'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Sistema_Complesso/Esercizio_12/Esercizio_12.srcs/sources_1/imports/new/unita_operativa.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'unita_operativa'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Sistema_Complesso/Esercizio_12/Esercizio_12.srcs/sim_1/new/tb_Sistema_Complesso.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_Sistema_Complesso'

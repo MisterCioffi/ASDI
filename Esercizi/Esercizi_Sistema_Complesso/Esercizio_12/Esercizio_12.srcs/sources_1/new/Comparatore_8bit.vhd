@@ -21,6 +21,7 @@
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
 
 entity Comparatore_8bit is
     Port ( 
@@ -32,12 +33,14 @@ entity Comparatore_8bit is
 end Comparatore_8bit;
 
 architecture Behavioral of Comparatore_8bit is
-begin
 
-    -- alpha=0, beta=0 => IN_A = IN_B
-    -- alpha=1, beta=0 => IN_A > IN_B
-    -- alpha=0, beta=1 => IN_B > IN_A
-    alpha <= '1' when (IN_A > IN_B) else '0';
-    beta  <= '1' when (IN_B > IN_A) else '0';
+begin
+    
+
+    -- alpha=1 solo se A è strettamente maggiore di B
+    alpha <= '1' when (signed(IN_A) > signed(IN_B)) else '0';
+    
+    -- beta=1 in tutti gli altri casi (minore o uguale)
+    beta  <= '1' when (signed(IN_A) <= signed(IN_B)) else '0';
 
 end Behavioral;

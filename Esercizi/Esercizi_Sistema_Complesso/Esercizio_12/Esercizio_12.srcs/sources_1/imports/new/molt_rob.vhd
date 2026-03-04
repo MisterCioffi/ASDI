@@ -17,13 +17,15 @@ architecture structural of molt_rob is
 		port( q0, clock, reset, start: in std_logic;
 		  count: in std_logic_vector(1 downto 0);
 		  loadM, count_in, loadAQ, en_shift: out std_logic;
-		  selM, selAQ, selF, subtract, stop_cu: out std_logic); 
+		  selM, selAQ, selF, subtract, stop_cu: out std_logic;
+		  reset_init: out std_logic); 
 	end component;
 	
 	component unita_operativa is
 	port( X, Y: in std_logic_vector(3 downto 0);--moltiplicatore e moltiplicando
 		  clock, reset: in std_logic;
 		  loadAQ, shift, loadM, sub, selM, selAQ, selF, count_in: in std_logic;
+		  reset_init: in std_logic;
 		  count: out std_logic_vector(1 downto 0);
 		  P: out std_logic_vector(7 downto 0));
 	end component;
@@ -37,7 +39,7 @@ architecture structural of molt_rob is
 	signal temp_shift, temp_fshift: std_logic;
 	signal temp_loadM: std_logic;
 	signal temp_stop_cu: std_logic; -- segnale di reset generato dalla UC
-	signal temp_reset_in: std_logic; -- segnale di reset in ingresso alla UO
+	signal temp_reset_init: std_logic; -- segnale di reset in ingresso alla UO
 	signal temp_selF: std_logic;
 	
 	begin
@@ -46,13 +48,14 @@ architecture structural of molt_rob is
 	(tempq0, clock, reset, start, 
 	temp_count, 
 	temp_loadM, temp_count_in, temp_loadAQ, temp_shift, 
-	temp_selM, temp_selAQ, temp_selF, temp_sub, temp_stop_cu);
+	temp_selM, temp_selAQ, temp_selF, temp_sub, temp_stop_cu, temp_reset_init);
 	
 		  
 	
 	UO: unita_operativa port map
 	(X, Y, clock, reset, temp_loadAQ, temp_shift, temp_loadM, 
-	temp_sub, temp_selM, temp_selAQ, temp_selF, temp_count_in, temp_count, temp_p); 
+	temp_sub, temp_selM, temp_selAQ, temp_selF, temp_count_in, 
+	temp_reset_init, temp_count, temp_p);
 	
 	
 		  

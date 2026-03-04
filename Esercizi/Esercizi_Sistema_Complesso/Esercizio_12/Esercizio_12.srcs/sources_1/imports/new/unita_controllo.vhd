@@ -8,7 +8,8 @@ entity unita_controllo is
 	port( q0, clock, reset, start: in std_logic;--clock � il clock della board, clock_div viene dal divisore di freq
 		  count: in std_logic_vector(1 downto 0);
 		  loadM, count_in, loadAQ, en_shift: out std_logic;
-		  selM, selAQ, selF, subtract, stop_cu: out std_logic); 
+		  selM, selAQ, selF, subtract, stop_cu: out std_logic;
+		  reset_init: out std_logic); -- reset_op � un segnale di reset per i registri interni all'inizio di un'operazione di moltiplicazione
 end unita_controllo;
 
 
@@ -49,7 +50,7 @@ architecture structural of unita_controllo is
          loadM <='0';   --carica il moltiplicando nel registro M
          stop_cu <='0';  
          en_shift <='0'; --segnale che abilita lo shift durante le prime N-1 iterazioni
-         
+         reset_init <='0'; --segnale di reset per i registri all'inizio di un'operazione di moltiplicazione
 		  	            
 	     CASE current_state is
 		  
@@ -57,6 +58,7 @@ architecture structural of unita_controllo is
 		  
 		            
                   if(start='1') then 
+				  	   reset_init <='1'; 
 					   next_state <= acquisisci_op;
 				    else 
 					   next_state <= idle;
