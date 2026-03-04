@@ -1,0 +1,238 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Mar  4 21:19:47 2026
+# Process ID: 21788
+# Current directory: C:/Users/anton/Desktop/Esercizio_1.3/Esercizio_1.3.runs/synth_1
+# Command line: vivado.exe -log Board_TopLevel.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Board_TopLevel.tcl
+# Log file: C:/Users/anton/Desktop/Esercizio_1.3/Esercizio_1.3.runs/synth_1/Board_TopLevel.vds
+# Journal file: C:/Users/anton/Desktop/Esercizio_1.3/Esercizio_1.3.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Board_TopLevel.tcl -notrace
+Command: synth_design -top Board_TopLevel -part xc7a50ticsg324-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a50ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a50ti'
+INFO: [Device 21-403] Loading part xc7a50ticsg324-1L
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 21784
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1004.227 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Board_TopLevel' [C:/Users/anton/Desktop/Esercizio_1.3/Esercizio_1.3.srcs/sources_1/new/Board_TopLevel.vhd:38]
+INFO: [Synth 8-3491] module 'rete_32_8' declared at 'C:/Users/anton/Desktop/Esercizio_1.3/Esercizio_1.3.srcs/sources_1/imports/Esercizi_Reti_Elementari/Esercizio_1.2/rete_32_8/rete_32_8.srcs/sources_1/new/rete_32_8.vhd:34' bound to instance 'Rete_Inst' of component 'rete_32_8' [C:/Users/anton/Desktop/Esercizio_1.3/Esercizio_1.3.srcs/sources_1/new/Board_TopLevel.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'rete_32_8' [C:/Users/anton/Desktop/Esercizio_1.3/Esercizio_1.3.srcs/sources_1/imports/Esercizi_Reti_Elementari/Esercizio_1.2/rete_32_8/rete_32_8.srcs/sources_1/new/rete_32_8.vhd:44]
+INFO: [Synth 8-3491] module 'mux_32_1' declared at 'C:/Users/anton/Desktop/Esercizio_1.3/Esercizio_1.3.srcs/sources_1/imports/Esercizi_Reti_Elementari/Esercizio_1.1/mux_32_1/mux_32_1.srcs/sources_1/new/MUX_32_1.vhd:36' bound to instance 'mux' of component 'mux_32_1' [C:/Users/anton/Desktop/Esercizio_1.3/Esercizio_1.3.srcs/sources_1/imports/Esercizi_Reti_Elementari/Esercizio_1.2/rete_32_8/rete_32_8.srcs/sources_1/new/rete_32_8.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'mux_32_1' [C:/Users/anton/Desktop/Esercizio_1.3/Esercizio_1.3.srcs/sources_1/imports/Esercizi_Reti_Elementari/Esercizio_1.1/mux_32_1/mux_32_1.srcs/sources_1/new/MUX_32_1.vhd:42]
+INFO: [Synth 8-3491] module 'mux_4_1' declared at 'C:/Users/anton/Desktop/Esercizio_1.3/Esercizio_1.3.srcs/sources_1/imports/Esercizi_Reti_Elementari/Esercizio_1.1/mux_32_1/mux_32_1.srcs/sources_1/new/mux_4_1.vhd:4' bound to instance 'mux_L1_0' of component 'mux_4_1' [C:/Users/anton/Desktop/Esercizio_1.3/Esercizio_1.3.srcs/sources_1/imports/Esercizi_Reti_Elementari/Esercizio_1.1/mux_32_1/mux_32_1.srcs/sources_1/new/MUX_32_1.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'mux_4_1' [C:/Users/anton/Desktop/Esercizio_1.3/Esercizio_1.3.srcs/sources_1/imports/Esercizi_Reti_Elementari/Esercizio_1.1/mux_32_1/mux_32_1.srcs/sources_1/new/mux_4_1.vhd:10]
+INFO: [Synth 8-226] default block is never used [C:/Users/anton/Desktop/Esercizio_1.3/Esercizio_1.3.srcs/sources_1/imports/Esercizi_Reti_Elementari/Esercizio_1.1/mux_32_1/mux_32_1.srcs/sources_1/new/mux_4_1.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'mux_4_1' (1#1) [C:/Users/anton/Desktop/Esercizio_1.3/Esercizio_1.3.srcs/sources_1/imports/Esercizi_Reti_Elementari/Esercizio_1.1/mux_32_1/mux_32_1.srcs/sources_1/new/mux_4_1.vhd:10]
+INFO: [Synth 8-3491] module 'mux_4_1' declared at 'C:/Users/anton/Desktop/Esercizio_1.3/Esercizio_1.3.srcs/sources_1/imports/Esercizi_Reti_Elementari/Esercizio_1.1/mux_32_1/mux_32_1.srcs/sources_1/new/mux_4_1.vhd:4' bound to instance 'mux_L1_1' of component 'mux_4_1' [C:/Users/anton/Desktop/Esercizio_1.3/Esercizio_1.3.srcs/sources_1/imports/Esercizi_Reti_Elementari/Esercizio_1.1/mux_32_1/mux_32_1.srcs/sources_1/new/MUX_32_1.vhd:77]
+INFO: [Synth 8-3491] module 'mux_4_1' declared at 'C:/Users/anton/Desktop/Esercizio_1.3/Esercizio_1.3.srcs/sources_1/imports/Esercizi_Reti_Elementari/Esercizio_1.1/mux_32_1/mux_32_1.srcs/sources_1/new/mux_4_1.vhd:4' bound to instance 'mux_L1_2' of component 'mux_4_1' [C:/Users/anton/Desktop/Esercizio_1.3/Esercizio_1.3.srcs/sources_1/imports/Esercizi_Reti_Elementari/Esercizio_1.1/mux_32_1/mux_32_1.srcs/sources_1/new/MUX_32_1.vhd:78]
+INFO: [Synth 8-3491] module 'mux_4_1' declared at 'C:/Users/anton/Desktop/Esercizio_1.3/Esercizio_1.3.srcs/sources_1/imports/Esercizi_Reti_Elementari/Esercizio_1.1/mux_32_1/mux_32_1.srcs/sources_1/new/mux_4_1.vhd:4' bound to instance 'mux_L1_3' of component 'mux_4_1' [C:/Users/anton/Desktop/Esercizio_1.3/Esercizio_1.3.srcs/sources_1/imports/Esercizi_Reti_Elementari/Esercizio_1.1/mux_32_1/mux_32_1.srcs/sources_1/new/MUX_32_1.vhd:79]
+INFO: [Synth 8-3491] module 'mux_4_1' declared at 'C:/Users/anton/Desktop/Esercizio_1.3/Esercizio_1.3.srcs/sources_1/imports/Esercizi_Reti_Elementari/Esercizio_1.1/mux_32_1/mux_32_1.srcs/sources_1/new/mux_4_1.vhd:4' bound to instance 'mux_L1_4' of component 'mux_4_1' [C:/Users/anton/Desktop/Esercizio_1.3/Esercizio_1.3.srcs/sources_1/imports/Esercizi_Reti_Elementari/Esercizio_1.1/mux_32_1/mux_32_1.srcs/sources_1/new/MUX_32_1.vhd:80]
+INFO: [Synth 8-3491] module 'mux_4_1' declared at 'C:/Users/anton/Desktop/Esercizio_1.3/Esercizio_1.3.srcs/sources_1/imports/Esercizi_Reti_Elementari/Esercizio_1.1/mux_32_1/mux_32_1.srcs/sources_1/new/mux_4_1.vhd:4' bound to instance 'mux_L1_5' of component 'mux_4_1' [C:/Users/anton/Desktop/Esercizio_1.3/Esercizio_1.3.srcs/sources_1/imports/Esercizi_Reti_Elementari/Esercizio_1.1/mux_32_1/mux_32_1.srcs/sources_1/new/MUX_32_1.vhd:81]
+INFO: [Synth 8-3491] module 'mux_4_1' declared at 'C:/Users/anton/Desktop/Esercizio_1.3/Esercizio_1.3.srcs/sources_1/imports/Esercizi_Reti_Elementari/Esercizio_1.1/mux_32_1/mux_32_1.srcs/sources_1/new/mux_4_1.vhd:4' bound to instance 'mux_L1_6' of component 'mux_4_1' [C:/Users/anton/Desktop/Esercizio_1.3/Esercizio_1.3.srcs/sources_1/imports/Esercizi_Reti_Elementari/Esercizio_1.1/mux_32_1/mux_32_1.srcs/sources_1/new/MUX_32_1.vhd:82]
+INFO: [Synth 8-3491] module 'mux_4_1' declared at 'C:/Users/anton/Desktop/Esercizio_1.3/Esercizio_1.3.srcs/sources_1/imports/Esercizi_Reti_Elementari/Esercizio_1.1/mux_32_1/mux_32_1.srcs/sources_1/new/mux_4_1.vhd:4' bound to instance 'mux_L1_7' of component 'mux_4_1' [C:/Users/anton/Desktop/Esercizio_1.3/Esercizio_1.3.srcs/sources_1/imports/Esercizi_Reti_Elementari/Esercizio_1.1/mux_32_1/mux_32_1.srcs/sources_1/new/MUX_32_1.vhd:83]
+INFO: [Synth 8-3491] module 'mux_2_1' declared at 'C:/Users/anton/Desktop/Esercizio_1.3/Esercizio_1.3.srcs/sources_1/imports/Esercizi_Reti_Elementari/Esercizio_1.1/mux_32_1/mux_32_1.srcs/sources_1/new/mux_2_1.vhd:26' bound to instance 'mux_L2_0' of component 'mux_2_1' [C:/Users/anton/Desktop/Esercizio_1.3/Esercizio_1.3.srcs/sources_1/imports/Esercizi_Reti_Elementari/Esercizio_1.1/mux_32_1/mux_32_1.srcs/sources_1/new/MUX_32_1.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'mux_2_1' [C:/Users/anton/Desktop/Esercizio_1.3/Esercizio_1.3.srcs/sources_1/imports/Esercizi_Reti_Elementari/Esercizio_1.1/mux_32_1/mux_32_1.srcs/sources_1/new/mux_2_1.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'mux_2_1' (2#1) [C:/Users/anton/Desktop/Esercizio_1.3/Esercizio_1.3.srcs/sources_1/imports/Esercizi_Reti_Elementari/Esercizio_1.1/mux_32_1/mux_32_1.srcs/sources_1/new/mux_2_1.vhd:35]
+INFO: [Synth 8-3491] module 'mux_2_1' declared at 'C:/Users/anton/Desktop/Esercizio_1.3/Esercizio_1.3.srcs/sources_1/imports/Esercizi_Reti_Elementari/Esercizio_1.1/mux_32_1/mux_32_1.srcs/sources_1/new/mux_2_1.vhd:26' bound to instance 'mux_L2_1' of component 'mux_2_1' [C:/Users/anton/Desktop/Esercizio_1.3/Esercizio_1.3.srcs/sources_1/imports/Esercizi_Reti_Elementari/Esercizio_1.1/mux_32_1/mux_32_1.srcs/sources_1/new/MUX_32_1.vhd:96]
+INFO: [Synth 8-3491] module 'mux_2_1' declared at 'C:/Users/anton/Desktop/Esercizio_1.3/Esercizio_1.3.srcs/sources_1/imports/Esercizi_Reti_Elementari/Esercizio_1.1/mux_32_1/mux_32_1.srcs/sources_1/new/mux_2_1.vhd:26' bound to instance 'mux_L2_2' of component 'mux_2_1' [C:/Users/anton/Desktop/Esercizio_1.3/Esercizio_1.3.srcs/sources_1/imports/Esercizi_Reti_Elementari/Esercizio_1.1/mux_32_1/mux_32_1.srcs/sources_1/new/MUX_32_1.vhd:100]
+INFO: [Synth 8-3491] module 'mux_2_1' declared at 'C:/Users/anton/Desktop/Esercizio_1.3/Esercizio_1.3.srcs/sources_1/imports/Esercizi_Reti_Elementari/Esercizio_1.1/mux_32_1/mux_32_1.srcs/sources_1/new/mux_2_1.vhd:26' bound to instance 'mux_L2_3' of component 'mux_2_1' [C:/Users/anton/Desktop/Esercizio_1.3/Esercizio_1.3.srcs/sources_1/imports/Esercizi_Reti_Elementari/Esercizio_1.1/mux_32_1/mux_32_1.srcs/sources_1/new/MUX_32_1.vhd:104]
+INFO: [Synth 8-3491] module 'mux_4_1' declared at 'C:/Users/anton/Desktop/Esercizio_1.3/Esercizio_1.3.srcs/sources_1/imports/Esercizi_Reti_Elementari/Esercizio_1.1/mux_32_1/mux_32_1.srcs/sources_1/new/mux_4_1.vhd:4' bound to instance 'mux_final' of component 'mux_4_1' [C:/Users/anton/Desktop/Esercizio_1.3/Esercizio_1.3.srcs/sources_1/imports/Esercizi_Reti_Elementari/Esercizio_1.1/mux_32_1/mux_32_1.srcs/sources_1/new/MUX_32_1.vhd:115]
+INFO: [Synth 8-256] done synthesizing module 'mux_32_1' (3#1) [C:/Users/anton/Desktop/Esercizio_1.3/Esercizio_1.3.srcs/sources_1/imports/Esercizi_Reti_Elementari/Esercizio_1.1/mux_32_1/mux_32_1.srcs/sources_1/new/MUX_32_1.vhd:42]
+INFO: [Synth 8-3491] module 'demux_8_1' declared at 'C:/Users/anton/Desktop/Esercizio_1.3/Esercizio_1.3.srcs/sources_1/imports/Esercizi_Reti_Elementari/Esercizio_1.2/rete_32_8/rete_32_8.srcs/sources_1/new/demux_8_1.vhd:24' bound to instance 'demux' of component 'demux_8_1' [C:/Users/anton/Desktop/Esercizio_1.3/Esercizio_1.3.srcs/sources_1/imports/Esercizi_Reti_Elementari/Esercizio_1.2/rete_32_8/rete_32_8.srcs/sources_1/new/rete_32_8.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'demux_8_1' [C:/Users/anton/Desktop/Esercizio_1.3/Esercizio_1.3.srcs/sources_1/imports/Esercizi_Reti_Elementari/Esercizio_1.2/rete_32_8/rete_32_8.srcs/sources_1/new/demux_8_1.vhd:30]
+INFO: [Synth 8-226] default block is never used [C:/Users/anton/Desktop/Esercizio_1.3/Esercizio_1.3.srcs/sources_1/imports/Esercizi_Reti_Elementari/Esercizio_1.2/rete_32_8/rete_32_8.srcs/sources_1/new/demux_8_1.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'demux_8_1' (4#1) [C:/Users/anton/Desktop/Esercizio_1.3/Esercizio_1.3.srcs/sources_1/imports/Esercizi_Reti_Elementari/Esercizio_1.2/rete_32_8/rete_32_8.srcs/sources_1/new/demux_8_1.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'rete_32_8' (5#1) [C:/Users/anton/Desktop/Esercizio_1.3/Esercizio_1.3.srcs/sources_1/imports/Esercizi_Reti_Elementari/Esercizio_1.2/rete_32_8/rete_32_8.srcs/sources_1/new/rete_32_8.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'Board_TopLevel' (6#1) [C:/Users/anton/Desktop/Esercizio_1.3/Esercizio_1.3.srcs/sources_1/new/Board_TopLevel.vhd:38]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1004.227 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1004.227 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1004.227 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1004.227 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/anton/Desktop/Esercizio_1.3/Esercizio_1.3.srcs/constrs_1/new/Nexys_A7.xdc]
+Finished Parsing XDC File [C:/Users/anton/Desktop/Esercizio_1.3/Esercizio_1.3.srcs/constrs_1/new/Nexys_A7.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/anton/Desktop/Esercizio_1.3/Esercizio_1.3.srcs/constrs_1/new/Nexys_A7.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Board_TopLevel_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Board_TopLevel_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1004.227 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1004.227 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1004.227 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a50ticsg324-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1004.227 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1004.227 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1004.227 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   4 Input    1 Bit        Muxes := 9     
+	   2 Input    1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1004.227 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1004.227 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1004.227 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1004.227 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1007.930 ; gain = 3.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1007.930 ; gain = 3.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1007.930 ; gain = 3.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1007.930 ; gain = 3.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1007.930 ; gain = 3.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1007.930 ; gain = 3.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |BUFG  |     1|
+|2     |LUT6  |    16|
+|3     |MUXF7 |     4|
+|4     |MUXF8 |     2|
+|5     |FDRE  |    32|
+|6     |IBUF  |    19|
+|7     |OBUF  |     8|
++------+------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1007.930 ; gain = 3.703
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 1007.930 ; gain = 3.703
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1007.930 ; gain = 3.703
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1018.980 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1024.750 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+45 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:29 . Memory (MB): peak = 1024.750 ; gain = 20.523
+INFO: [Common 17-1381] The checkpoint 'C:/Users/anton/Desktop/Esercizio_1.3/Esercizio_1.3.runs/synth_1/Board_TopLevel.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Board_TopLevel_utilization_synth.rpt -pb Board_TopLevel_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Mar  4 21:20:19 2026...
