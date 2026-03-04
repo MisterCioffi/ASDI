@@ -50,7 +50,7 @@ architecture Structural of Datapath_B is
             clk : in STD_LOGIC;
             rst : in STD_LOGIC;
             en : in STD_LOGIC;
-            cont : out STD_LOGIC_VECTOR(2 downto 0)
+            count : out STD_LOGIC_VECTOR(2 downto 0)
         );
     end component;
 
@@ -96,7 +96,7 @@ begin
             clk => clk,
             rst => rst,
             en => en_cont8,
-            cont => cont8
+            count => cont8
         );
 
     RB : reg_pp

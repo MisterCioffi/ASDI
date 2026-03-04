@@ -1,0 +1,41 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Users/anton/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e371bbf7a57c47a9bb69a554e7c0ae21 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Sistema_Complesso_behav xil_defaultlib.tb_Sistema_Complesso -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.control_unit_A [control_unit_a_default]
+Compiling architecture behavioral of entity xil_defaultlib.Contatore_mod16 [contatore_mod16_default]
+Compiling architecture behavioral of entity xil_defaultlib.Memoria_ROM [memoria_rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg_pp [\reg_pp(n=4)\]
+Compiling architecture structural of entity xil_defaultlib.unita_controllo [unita_controllo_default]
+Compiling architecture behavioural of entity xil_defaultlib.registro4 [registro4_default]
+Compiling architecture rtl of entity xil_defaultlib.mux_21 [\mux_21(width=4)\]
+Compiling architecture rtl of entity xil_defaultlib.mux_21 [mux_21_default]
+Compiling architecture behavioural of entity xil_defaultlib.FFD [ffd_default]
+Compiling architecture behavioural of entity xil_defaultlib.shift_register [shift_register_default]
+Compiling architecture rtl of entity xil_defaultlib.full_adder [full_adder_default]
+Compiling architecture structural of entity xil_defaultlib.ripple_carry [ripple_carry_default]
+Compiling architecture structural of entity xil_defaultlib.adder_sub [adder_sub_default]
+Compiling architecture behavioural of entity xil_defaultlib.cont_mod4 [cont_mod4_default]
+Compiling architecture structural of entity xil_defaultlib.unita_operativa [unita_operativa_default]
+Compiling architecture structural of entity xil_defaultlib.molt_rob [molt_rob_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg_pp [reg_pp_default]
+Compiling architecture structural of entity xil_defaultlib.Datapath_A [datapath_a_default]
+Compiling architecture structural of entity xil_defaultlib.Nodo_A [nodo_a_default]
+Compiling architecture behavioral of entity xil_defaultlib.control_unit_B [control_unit_b_default]
+Compiling architecture behavioral of entity xil_defaultlib.Contatore_mod8 [contatore_mod8_default]
+Compiling architecture behavioral of entity xil_defaultlib.Memoria_MEM [memoria_mem_default]
+Compiling architecture behavioral of entity xil_defaultlib.Comparatore_8bit [comparatore_8bit_default]
+Compiling architecture structural of entity xil_defaultlib.Datapath_B [datapath_b_default]
+Compiling architecture structural of entity xil_defaultlib.Nodo_B [nodo_b_default]
+Compiling architecture structural of entity xil_defaultlib.Sistema_Complesso [sistema_complesso_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_sistema_complesso
+Built simulation snapshot tb_Sistema_Complesso_behav

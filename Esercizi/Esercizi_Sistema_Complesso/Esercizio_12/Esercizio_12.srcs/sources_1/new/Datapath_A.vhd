@@ -51,7 +51,7 @@ architecture Structural of Datapath_A is
             clk : in STD_LOGIC;
             rst : in STD_LOGIC;
             en : in STD_LOGIC;
-            cont : out STD_LOGIC_VECTOR(3 downto 0)
+            count : out STD_LOGIC_VECTOR(3 downto 0)
         );
     end component;
 
@@ -99,7 +99,7 @@ begin
             clk => clk,
             rst => rst,
             en => en_cont16,
-            cont => temp_cont16
+            count => temp_cont16
         );
 
     ROM_inst : Memoria_ROM

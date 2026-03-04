@@ -33,21 +33,20 @@ entity Memoria_ROM is
         clk      : in  std_logic;
         read_en  : in  std_logic;                                -- Abilitazione alla lettura
         addr     : in  std_logic_vector(3 downto 0);             -- Indirizzo dal contatore
-        data_out : out std_logic_vector(7 downto 0)              -- Dato in uscita (8 bit)
+        data_out : out std_logic_vector(3 downto 0)              -- Dato in uscita (4 bit)
     );
 end Memoria_ROM;
 
 architecture Behavioral of Memoria_ROM is
 
-    type rom_type is array (0 to 15) of std_logic_vector(7 downto 0);
+    type rom_type is array (0 to 15) of std_logic_vector(3 downto 0);
 
     constant ROM_CONTENT : rom_type := (
-        0 => x"12",
-        1 => x"AA", 
-        2 => x"34",
-        3 => x"56",
-        4 => x"AA", 
-        others => x"00" -- Riempe il resto a zero
+        0 => x"F",
+        1 => x"F", 
+        2 => x"2",
+        3 => x"4", 
+        others => x"0" -- Riempe il resto a zero
     );
 
 begin
