@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Macchine_Aritmetiche/Esercizio_7.2/Esercizio_7.2.srcs/constrs_1/imports/new/NexysA750t.xdc rfile:../../../Esercizio_7.2.srcs/constrs_1/imports/new/NexysA750t.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/constrs_1/new/mapping_constraint.xdc rfile:../../../Esercizio_7.2.srcs/constrs_1/new/mapping_constraint.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN E3    IOSTANDARD LVCMOS33 } [get_ports { clk }];
 set_property src_info {type:XDC file:1 line:6 export:INPUT save:INPUT read:READ} [current_design]

@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Macchine_Aritmetiche/Esercizio_7.2/Esercizio_7.2.runs/synth_1'
+HD_PWD='C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

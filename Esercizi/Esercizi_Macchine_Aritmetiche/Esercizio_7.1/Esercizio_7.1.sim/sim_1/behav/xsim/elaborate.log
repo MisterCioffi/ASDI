@@ -1,0 +1,25 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Users/anton/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 9eb2ad41eff14a5497ff5fff5cd7ceb8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_molt_booth_behav xil_defaultlib.tb_molt_booth -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.unita_controllo [unita_controllo_default]
+Compiling architecture behavioural of entity xil_defaultlib.registro8 [registro8_default]
+Compiling architecture behavioural of entity xil_defaultlib.shift_register [shift_register_default]
+Compiling architecture behavioral of entity xil_defaultlib.FFD [ffd_default]
+Compiling architecture behavioural of entity xil_defaultlib.cont_mod8 [cont_mod8_default]
+Compiling architecture rtl of entity xil_defaultlib.full_adder [full_adder_default]
+Compiling architecture structural of entity xil_defaultlib.ripple_carry [ripple_carry_default]
+Compiling architecture structural of entity xil_defaultlib.adder_sub [adder_sub_default]
+Compiling architecture structural of entity xil_defaultlib.unita_operativa [unita_operativa_default]
+Compiling architecture structural of entity xil_defaultlib.molt_booth [molt_booth_default]
+Compiling architecture test of entity xil_defaultlib.tb_molt_booth
+Built simulation snapshot tb_molt_booth_behav

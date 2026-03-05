@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Macchine_Aritmetiche/Esercizio_7.2/Esercizio_7.2.runs/synth_1/Top_Level.tcl"
+  variable script "C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.runs/synth_1/Top_Level.tcl"
   variable category "vivado_synth"
 }
 
@@ -78,19 +78,28 @@ create_project -in_memory -part xc7a50ticsg324-1L
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Macchine_Aritmetiche/Esercizio_7.2/Esercizio_7.2.cache/wt [current_project]
-set_property parent.project_path C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Macchine_Aritmetiche/Esercizio_7.2/Esercizio_7.2.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.cache/wt [current_project]
+set_property parent.project_path C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:nexys-a7-50t:part0:1.3 [current_project]
-set_property ip_output_repo c:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Macchine_Aritmetiche/Esercizio_7.2/Esercizio_7.2.cache/ip [current_project]
+set_property ip_output_repo c:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
-  C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Macchine_Aritmetiche/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/imports/Desktop/ese_6.2/ese_6.2.srcs/sources_1/new/Button_Conditioner.vhd
-  C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Macchine_Aritmetiche/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/imports/Desktop/MoltBooth8bit/MoltBooth8bit.srcs/sources_1/new/MoltBooth8bit.vhd
-  C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Macchine_Aritmetiche/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/new/Top_Level.vhd
+  C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/new/Button_Conditioner.vhd
+  C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/imports/new/FFD.vhd
+  C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/new/molt_booth.vhd
+  C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/imports/new/adder_sub.vhd
+  C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/imports/new/cont_mod8.vhd
+  C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/imports/new/full_adder.vhd
+  C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/imports/new/registro8.vhd
+  C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/imports/new/ripple_carry.vhd
+  C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/imports/new/shift_register.vhd
+  C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/new/unita_controllo.vhd
+  C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/new/unita_operativa.vhd
+  C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/new/Top_Level.vhd
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -101,8 +110,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Macchine_Aritmetiche/Esercizio_7.2/Esercizio_7.2.srcs/constrs_1/imports/new/NexysA750t.xdc
-set_property used_in_implementation false [get_files C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Macchine_Aritmetiche/Esercizio_7.2/Esercizio_7.2.srcs/constrs_1/imports/new/NexysA750t.xdc]
+read_xdc C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/constrs_1/new/mapping_constraint.xdc
+set_property used_in_implementation false [get_files C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/constrs_1/new/mapping_constraint.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

@@ -17,95 +17,132 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a50t
 INFO: [Device 21-403] Loading part xc7a50ticsg324-1L
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 16900
+INFO: [Synth 8-7075] Helper process launched with PID 18972
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1002.699 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1008.391 ; gain = 0.000
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'Top_Level' [C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Macchine_Aritmetiche/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/new/Top_Level.vhd:18]
-INFO: [Synth 8-638] synthesizing module 'Button_Conditioner' [C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Macchine_Aritmetiche/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/imports/Desktop/ese_6.2/ese_6.2.srcs/sources_1/new/Button_Conditioner.vhd:46]
+INFO: [Synth 8-638] synthesizing module 'Top_Level' [C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/new/Top_Level.vhd:18]
+INFO: [Synth 8-638] synthesizing module 'Button_Conditioner' [C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/new/Button_Conditioner.vhd:46]
 	Parameter CLK_FREQ_HZ bound to: 100000000 - type: integer 
 	Parameter DEBOUNCE_MS bound to: 20 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'Button_Conditioner' (1#1) [C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Macchine_Aritmetiche/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/imports/Desktop/ese_6.2/ese_6.2.srcs/sources_1/new/Button_Conditioner.vhd:46]
-INFO: [Synth 8-638] synthesizing module 'MoltBooth8bit' [C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Macchine_Aritmetiche/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/imports/Desktop/MoltBooth8bit/MoltBooth8bit.srcs/sources_1/new/MoltBooth8bit.vhd:38]
-INFO: [Synth 8-256] done synthesizing module 'MoltBooth8bit' (2#1) [C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Macchine_Aritmetiche/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/imports/Desktop/MoltBooth8bit/MoltBooth8bit.srcs/sources_1/new/MoltBooth8bit.vhd:38]
-INFO: [Synth 8-256] done synthesizing module 'Top_Level' (3#1) [C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Macchine_Aritmetiche/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/new/Top_Level.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'Button_Conditioner' (1#1) [C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/new/Button_Conditioner.vhd:46]
+INFO: [Synth 8-638] synthesizing module 'molt_booth' [C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/new/molt_booth.vhd:44]
+INFO: [Synth 8-3491] module 'unita_controllo' declared at 'C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/new/unita_controllo.vhd:34' bound to instance 'UC' of component 'unita_controllo' [C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/new/molt_booth.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'unita_controllo' [C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/new/unita_controllo.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'unita_controllo' (2#1) [C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/new/unita_controllo.vhd:45]
+INFO: [Synth 8-3491] module 'unita_operativa' declared at 'C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/new/unita_operativa.vhd:34' bound to instance 'UO' of component 'unita_operativa' [C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/new/molt_booth.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'unita_operativa' [C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/new/unita_operativa.vhd:46]
+INFO: [Synth 8-3491] module 'registro8' declared at 'C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/imports/new/registro8.vhd:4' bound to instance 'reg_M' of component 'registro8' [C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/new/unita_operativa.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'registro8' [C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/imports/new/registro8.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'registro8' (3#1) [C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/imports/new/registro8.vhd:10]
+INFO: [Synth 8-3491] module 'shift_register' declared at 'C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/imports/new/shift_register.vhd:7' bound to instance 'reg_A' of component 'shift_register' [C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/new/unita_operativa.vhd:101]
+INFO: [Synth 8-638] synthesizing module 'shift_register' [C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/imports/new/shift_register.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'shift_register' (4#1) [C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/imports/new/shift_register.vhd:14]
+INFO: [Synth 8-3491] module 'shift_register' declared at 'C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/imports/new/shift_register.vhd:7' bound to instance 'reg_Q' of component 'shift_register' [C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/new/unita_operativa.vhd:111]
+INFO: [Synth 8-3491] module 'FFD' declared at 'C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/imports/new/FFD.vhd:4' bound to instance 'ff_q_minus1' of component 'FFD' [C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/new/unita_operativa.vhd:121]
+INFO: [Synth 8-638] synthesizing module 'FFD' [C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/imports/new/FFD.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'FFD' (5#1) [C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/imports/new/FFD.vhd:14]
+INFO: [Synth 8-3491] module 'cont_mod8' declared at 'C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/imports/new/cont_mod8.vhd:6' bound to instance 'CONT' of component 'cont_mod8' [C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/new/unita_operativa.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'cont_mod8' [C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/imports/new/cont_mod8.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'cont_mod8' (6#1) [C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/imports/new/cont_mod8.vhd:12]
+INFO: [Synth 8-3491] module 'adder_sub' declared at 'C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/imports/new/adder_sub.vhd:4' bound to instance 'ADDER' of component 'adder_sub' [C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/new/unita_operativa.vhd:136]
+INFO: [Synth 8-638] synthesizing module 'adder_sub' [C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/imports/new/adder_sub.vhd:11]
+INFO: [Synth 8-3491] module 'ripple_carry' declared at 'C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/imports/new/ripple_carry.vhd:4' bound to instance 'RA' of component 'ripple_carry' [C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/imports/new/adder_sub.vhd:27]
+INFO: [Synth 8-638] synthesizing module 'ripple_carry' [C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/imports/new/ripple_carry.vhd:11]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/imports/new/full_adder.vhd:4' bound to instance 'RA0' of component 'full_adder' [C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/imports/new/ripple_carry.vhd:23]
+INFO: [Synth 8-638] synthesizing module 'full_adder' [C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/imports/new/full_adder.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'full_adder' (7#1) [C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/imports/new/full_adder.vhd:12]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/imports/new/full_adder.vhd:4' bound to instance 'RA' of component 'full_adder' [C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/imports/new/ripple_carry.vhd:26]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/imports/new/full_adder.vhd:4' bound to instance 'RA' of component 'full_adder' [C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/imports/new/ripple_carry.vhd:26]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/imports/new/full_adder.vhd:4' bound to instance 'RA' of component 'full_adder' [C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/imports/new/ripple_carry.vhd:26]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/imports/new/full_adder.vhd:4' bound to instance 'RA' of component 'full_adder' [C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/imports/new/ripple_carry.vhd:26]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/imports/new/full_adder.vhd:4' bound to instance 'RA' of component 'full_adder' [C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/imports/new/ripple_carry.vhd:26]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/imports/new/full_adder.vhd:4' bound to instance 'RA' of component 'full_adder' [C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/imports/new/ripple_carry.vhd:26]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/imports/new/full_adder.vhd:4' bound to instance 'RA7' of component 'full_adder' [C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/imports/new/ripple_carry.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'ripple_carry' (8#1) [C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/imports/new/ripple_carry.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'adder_sub' (9#1) [C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/imports/new/adder_sub.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'unita_operativa' (10#1) [C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/new/unita_operativa.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'molt_booth' (11#1) [C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/new/molt_booth.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'Top_Level' (12#1) [C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/new/Top_Level.vhd:18]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1002.699 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1008.391 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1002.699 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1008.391 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1002.699 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1008.391 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1002.699 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1008.391 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Macchine_Aritmetiche/Esercizio_7.2/Esercizio_7.2.srcs/constrs_1/imports/new/NexysA750t.xdc]
-Finished Parsing XDC File [C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Macchine_Aritmetiche/Esercizio_7.2/Esercizio_7.2.srcs/constrs_1/imports/new/NexysA750t.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Macchine_Aritmetiche/Esercizio_7.2/Esercizio_7.2.srcs/constrs_1/imports/new/NexysA750t.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_Level_propImpl.xdc].
+Parsing XDC File [C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/constrs_1/new/mapping_constraint.xdc]
+Finished Parsing XDC File [C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/constrs_1/new/mapping_constraint.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.srcs/constrs_1/new/mapping_constraint.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_Level_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/Top_Level_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1002.699 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1008.391 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1002.699 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1008.391 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1002.699 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1008.391 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a50ticsg324-1L
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1002.699 ; gain = 0.000
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1008.391 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1002.699 ; gain = 0.000
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1008.391 ; gain = 0.000
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-802] inferred FSM for state register 'stato_corr_reg' in module 'MoltBooth8bit'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'unita_controllo'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
-                    idle |                             0001 |                               00
-                 analisi |                             0010 |                               01
-             spostamento |                             0100 |                               10
-                    fine |                             1000 |                               11
+                    idle |                          0000001 |                              000
+                    init |                          0000010 |                              001
+                evaluate |                          0000100 |                              010
+             sottrazione |                          0001000 |                              100
+                   somma |                          0010000 |                              011
+             shift_state |                          0100000 |                              101
+                    fine |                          1000000 |                              110
 ---------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'stato_corr_reg' using encoding 'one-hot' in module 'MoltBooth8bit'
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'unita_controllo'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1002.699 ; gain = 0.000
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1008.391 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   3 Input    8 Bit       Adders := 1     
 	   2 Input    3 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 24    
 +---Registers : 
-	               16 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
 	                8 Bit    Registers := 5     
 	                3 Bit    Registers := 1     
-	                1 Bit    Registers := 12    
+	                1 Bit    Registers := 13    
 +---Muxes : 
-	   2 Input    8 Bit        Muxes := 1     
-	   4 Input    8 Bit        Muxes := 3     
-	   4 Input    4 Bit        Muxes := 1     
-	   2 Input    4 Bit        Muxes := 1     
-	   4 Input    3 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 2     
+	   7 Input    7 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 4     
+	   7 Input    1 Bit        Muxes := 2     
 	   2 Input    1 Bit        Muxes := 3     
-	   4 Input    1 Bit        Muxes := 7     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -122,25 +159,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1002.699 ; gain = 0.000
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1008.391 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1002.699 ; gain = 0.000
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1008.391 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1004.336 ; gain = 1.637
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1008.391 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1014.734 ; gain = 12.035
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1015.000 ; gain = 6.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -158,37 +195,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1014.734 ; gain = 12.035
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1015.000 ; gain = 6.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1014.734 ; gain = 12.035
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1015.000 ; gain = 6.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1014.734 ; gain = 12.035
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1015.000 ; gain = 6.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1014.734 ; gain = 12.035
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1015.000 ; gain = 6.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1014.734 ; gain = 12.035
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1015.000 ; gain = 6.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1014.734 ; gain = 12.035
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1015.000 ; gain = 6.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -205,40 +242,38 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |BUFG   |     1|
-|2     |CARRY4 |    26|
-|3     |LUT1   |    18|
-|4     |LUT2   |    34|
-|5     |LUT3   |     5|
-|6     |LUT4   |    25|
-|7     |LUT5   |     4|
-|8     |LUT6   |     5|
-|9     |FDCE   |    29|
-|10    |FDPE   |     1|
-|11    |FDRE   |   116|
-|12    |FDSE   |     8|
-|13    |IBUF   |    13|
-|14    |OBUF   |    17|
+|2     |CARRY4 |    24|
+|3     |LUT1   |    19|
+|4     |LUT2   |    37|
+|5     |LUT3   |    21|
+|6     |LUT4   |     3|
+|7     |LUT5   |     7|
+|8     |LUT6   |     9|
+|9     |FDRE   |   141|
+|10    |FDSE   |     1|
+|11    |IBUF   |    13|
+|12    |OBUF   |    17|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1014.734 ; gain = 12.035
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1015.000 ; gain = 6.609
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 1014.734 ; gain = 12.035
-Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1014.734 ; gain = 12.035
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1015.000 ; gain = 6.609
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1015.000 ; gain = 6.609
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1022.527 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 26 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1015.000 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1029.098 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1020.574 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-23 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+58 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1029.098 ; gain = 26.398
-INFO: [Common 17-1381] The checkpoint 'C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Macchine_Aritmetiche/Esercizio_7.2/Esercizio_7.2.runs/synth_1/Top_Level.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1020.574 ; gain = 12.184
+INFO: [Common 17-1381] The checkpoint 'C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.runs/synth_1/Top_Level.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Top_Level_utilization_synth.rpt -pb Top_Level_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Mar  2 14:43:47 2026...
+INFO: [Common 17-206] Exiting Vivado at Thu Mar  5 21:19:55 2026...

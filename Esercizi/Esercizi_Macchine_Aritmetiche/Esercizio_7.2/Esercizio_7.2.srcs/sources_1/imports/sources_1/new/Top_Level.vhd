@@ -21,6 +21,10 @@ architecture Structural of Top_Level is
     signal pulse_A     : STD_LOGIC;
     signal pulse_B     : STD_LOGIC;
     signal pulse_start : STD_LOGIC;
+    
+    -- Flag per ricordare se i valori sono stati caricati
+    signal flag_A : STD_LOGIC := '0';
+    signal flag_B : STD_LOGIC := '0';
 
     -- Registri di appoggio per "congelare" i valori degli switch
     signal reg_A_val : STD_LOGIC_VECTOR(7 downto 0) := (others => '0');
@@ -35,8 +39,8 @@ architecture Structural of Top_Level is
 
 begin
 
-    -- Inversione del reset (da attivo alto della board a attivo basso del modulo)
-    rst_n <= not btn_reset;
+    -- Inversione del reset
+    rst_n <= btn_reset;
 
     ---------------------------------------------------------------------------
     -- 1. Istanza Debouncer per il primo operando (A)
@@ -80,23 +84,47 @@ begin
             pulse  => pulse_start
         );
 
-    ---------------------------------------------------------------------------
-    -- 4. Logica di memorizzazione ingressi (Input Registers)
+---------------------------------------------------------------------------
+    -- 4. GESTIONE INTERFACCIA UTENTE (Registri, Flag e LED)
     ---------------------------------------------------------------------------
     process(clk)
     begin
         if rising_edge(clk) then
             if btn_reset = '1' then
-                reg_A_val <= (others => '0');
-                reg_B_val <= (others => '0');
+                reg_A_val      <= (others => '0');
+                reg_B_val      <= (others => '0');
+                flag_A         <= '0';
+                flag_B         <= '0';
+                leds_risultato <= (others => '0');
+                led_fatto      <= '0';
             else
-                -- I bottoni di load si limitano ESCLUSIVAMENTE a salvare il dato
-                if pulse_A = '1' then
-                    reg_A_val <= switches;
-                end if;
-                
-                if pulse_B = '1' then
-                    reg_B_val <= switches;
+                -- AVVIO: Spegni il LED di stato e resetta i flag per la prossima operazione
+                if pulse_start = '1' then
+                    led_fatto <= '0';
+                    flag_A    <= '0';
+                    flag_B    <= '0';
+                    
+                -- FINE CALCOLO: Aggiorna i LED risultato e riaccendi il LED di stato
+                elsif booth_done = '1' then
+                    leds_risultato <= booth_res_raw;
+                    
+                -- FASE DI CARICAMENTO E ATTESA
+                else
+                    if pulse_A = '1' then
+                        reg_A_val <= switches;
+                        flag_A    <= '1'; -- Ricorda che A è stato caricato
+                    end if;
+                    
+                    if pulse_B = '1' then
+                        reg_B_val <= switches;
+                        flag_B    <= '1'; -- Ricorda che B è stato caricato
+                    end if;
+                    
+                    -- Condizione di accensione LED "Sistema Pronto"
+                    -- Se entrambi i flag sono 1 (o stanno diventando 1 proprio in questo ciclo)
+                    if (flag_A = '1' or pulse_A = '1') and (flag_B = '1' or pulse_B = '1') then
+                        led_fatto <= '1';
+                    end if;
                 end if;
             end if;
         end if;
@@ -105,39 +133,15 @@ begin
     ---------------------------------------------------------------------------
     -- 5. Istanza del Moltiplicatore di Booth
     ---------------------------------------------------------------------------
-    Booth_Core: entity work.MoltBooth8bit
+    Booth_Core: entity work.molt_booth
         port map (
-            clk       => clk,
-            reset_n   => rst_n,
-            avvio     => pulse_start,   -- Il modulo si sveglia solo con il terzo bottone!
-            dato_X    => reg_A_val,
-            dato_Y    => reg_B_val,
-            risultato => booth_res_raw,
-            fatto     => booth_done     
+            clock       => clk,
+            reset       => rst_n,
+            start       => pulse_start,   -- Il modulo si sveglia solo con il terzo bottone!
+            X           => reg_A_val,
+            Y           => reg_B_val,
+            P           => booth_res_raw,
+            stop_cu     => booth_done     
         );
-
-    ---------------------------------------------------------------------------
-    -- 6. REGISTRO DI USCITA E GESTIONE LED
-    ---------------------------------------------------------------------------
-    process(clk)
-    begin
-        if rising_edge(clk) then
-            if btn_reset = '1' then
-                leds_risultato <= (others => '0');
-                led_fatto      <= '0';
-            else
-                -- Quando premiamo START, spegniamo subito il LED 'fatto'
-                -- così capiamo visivamente che il calcolo è in corso
-                if pulse_start = '1' then
-                    led_fatto <= '0';
-                    
-                -- Quando il core finisce, "catturiamo" i nuovi dati e riaccendiamo il LED
-                elsif booth_done = '1' then
-                    leds_risultato <= booth_res_raw;
-                    led_fatto      <= '1';
-                end if;
-            end if;
-        end if;
-    end process;
-
+        
 end Structural;

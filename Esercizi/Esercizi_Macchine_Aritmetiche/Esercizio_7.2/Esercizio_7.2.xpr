@@ -3,10 +3,10 @@
 <!--                                                         -->
 <!-- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="54" Path="C:/Users/anton/Desktop/ASDI/Esercizi/Esercizi_Macchine_Aritmetiche/Esercizio_7.2/Esercizio_7.2.xpr">
+<Project Version="7" Minor="54" Path="C:/Users/anton/Desktop/Esercizio_7.2/Esercizio_7.2.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="e5be6e29d9de4acbac853171a5f18e4c"/>
+    <Option Name="Id" Val="f7027ca0c51842bd9df705270edb5b4f"/>
     <Option Name="Part" Val="xc7a50ticsg324-1L"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -75,26 +75,96 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/Desktop/ese_6.2/ese_6.2.srcs/sources_1/new/Button_Conditioner.vhd">
+      <File Path="$PSRCDIR/sources_1/new/Button_Conditioner.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../ese_7.2/ese_7.2.srcs/sources_1/imports/Desktop/ese_6.2/ese_6.2.srcs/sources_1/new/Button_Conditioner.vhd"/>
-          <Attr Name="ImportTime" Val="1772451254"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/Desktop/MoltBooth8bit/MoltBooth8bit.srcs/sources_1/new/MoltBooth8bit.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/FFD.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../ese_7.2/ese_7.2.srcs/sources_1/imports/Desktop/MoltBooth8bit/MoltBooth8bit.srcs/sources_1/new/MoltBooth8bit.vhd"/>
-          <Attr Name="ImportTime" Val="1772453900"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Esercizio_7.1/Esercizio_7.1.srcs/sources_1/imports/new/FFD.vhd"/>
+          <Attr Name="ImportTime" Val="1772734475"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/new/molt_booth.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Esercizio_7.1/Esercizio_7.1.srcs/sources_1/new/molt_booth.vhd"/>
+          <Attr Name="ImportTime" Val="1772739713"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/adder_sub.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Esercizio_7.1/Esercizio_7.1.srcs/sources_1/imports/new/adder_sub.vhd"/>
+          <Attr Name="ImportTime" Val="1670864226"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/cont_mod8.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Esercizio_7.1/Esercizio_7.1.srcs/sources_1/imports/new/cont_mod8.vhd"/>
+          <Attr Name="ImportTime" Val="1700474995"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/full_adder.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Esercizio_7.1/Esercizio_7.1.srcs/sources_1/imports/new/full_adder.vhd"/>
+          <Attr Name="ImportTime" Val="1670864580"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/registro8.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Esercizio_7.1/Esercizio_7.1.srcs/sources_1/imports/new/registro8.vhd"/>
+          <Attr Name="ImportTime" Val="1700474929"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/ripple_carry.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Esercizio_7.1/Esercizio_7.1.srcs/sources_1/imports/new/ripple_carry.vhd"/>
+          <Attr Name="ImportTime" Val="1670864664"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/shift_register.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Esercizio_7.1/Esercizio_7.1.srcs/sources_1/imports/new/shift_register.vhd"/>
+          <Attr Name="ImportTime" Val="1772730572"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/new/unita_controllo.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Esercizio_7.1/Esercizio_7.1.srcs/sources_1/new/unita_controllo.vhd"/>
+          <Attr Name="ImportTime" Val="1772739615"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/new/unita_operativa.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Esercizio_7.1/Esercizio_7.1.srcs/sources_1/new/unita_operativa.vhd"/>
+          <Attr Name="ImportTime" Val="1772740448"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/imports/sources_1/new/Top_Level.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../ese_7.2/ese_7.2.srcs/sources_1/new/Top_Level.vhd"/>
-          <Attr Name="ImportTime" Val="1772459699"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../ASDI/Esercizi/Esercizi_Macchine_Aritmetiche/Esercizio_7.2/Esercizio_7.2.srcs/sources_1/imports/sources_1/new/Top_Level.vhd"/>
+          <Attr Name="ImportTime" Val="1772458902"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -107,10 +177,8 @@
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
       <Filter Type="Constrs"/>
-      <File Path="$PSRCDIR/constrs_1/imports/new/NexysA750t.xdc">
+      <File Path="$PSRCDIR/constrs_1/new/mapping_constraint.xdc">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../ese_7.2/ese_7.2.srcs/constrs_1/new/NexysA750t.xdc"/>
-          <Attr Name="ImportTime" Val="1772454325"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
         </FileInfo>
