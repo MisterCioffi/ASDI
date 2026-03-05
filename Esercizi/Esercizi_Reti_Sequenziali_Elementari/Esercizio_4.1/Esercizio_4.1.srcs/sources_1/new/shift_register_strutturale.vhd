@@ -41,36 +41,6 @@ entity shift_register is
     );
 end shift_register;
 
--- Architettura comortamentale
-architecture Behavioral of shift_register is
-    signal temp : STD_LOGIC_VECTOR(X-1 DOWNTO 0);
-begin
-    sr : process(clk, rst)
-    begin
-        if (rst = '1') then
-            temp <= (others => '0');
-        elsif (rising_edge(clk)) then
-            
-            if (s = '1') then 
-                if (Y = '0') then
-                    temp <= temp(X-2 DOWNTO 0) & din;
-                else 
-                    temp <= temp(X-3 DOWNTO 0) & din & din;
-                end if;
-            else 
-                if (Y = '0') then
-                    temp <= din & temp(X-1 DOWNTO 1);
-                else 
-                    temp <= din & din & temp(X-1 DOWNTO 2);
-                end if;
-            end if;
-        end if;
-    end process;
-    
-    qout <= temp(X-1);
-
-end Behavioral;
-
 -- Architettura Strutturale
 architecture Structural of shift_register is
     
