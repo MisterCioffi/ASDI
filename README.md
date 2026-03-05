@@ -45,4 +45,4 @@ La cartella `Appendice/` raccoglie i **componenti VHDL riutilizzabili**, ovvero 
 
 - **Linguaggio:** VHDL
 - **IDE:** Xilinx Vivado
-- **Target:** FPGA (board di riferimento del corso)
+- **Target:** FPGA (Nexys A7 50T)
