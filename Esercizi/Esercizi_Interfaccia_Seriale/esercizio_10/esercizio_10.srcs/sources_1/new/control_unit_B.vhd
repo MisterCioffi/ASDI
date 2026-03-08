@@ -95,6 +95,9 @@ begin
             when INCR_COUNT =>
                 en_cont <= '1';
                 stato_prossimo <= IDLE;
+
+            when others =>
+                stato_prossimo <= IDLE;
                
         end case;
     end process;

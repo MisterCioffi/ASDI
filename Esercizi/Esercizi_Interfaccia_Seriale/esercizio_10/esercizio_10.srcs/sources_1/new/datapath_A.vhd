@@ -37,6 +37,7 @@ entity datapath_A is
         read : in STD_LOGIC;
         en_cont : in STD_LOGIC;
         WR : in STD_LOGIC;
+        cout16 : out STD_LOGIC_VECTOR(3 DOWNTO 0);
         TXD : out std_logic  	:= '1';
         TBE	: inout std_logic 	:= '1'
     );
@@ -79,14 +80,13 @@ architecture Structural of datapath_A is
     end component;
     
     signal data_rom : STD_LOGIC_VECTOR(7 DOWNTO 0) := (others => '0');
-    signal cont_addr : STD_LOGIC_VECTOR(3 DOWNTO 0) := (others => '0');
 
 begin
 
     rom: ROM_16_8 port map (
         clk => clk,
         read => read,
-        address => cont_addr,
+        address => cout16,
         dout => data_rom
     );
     
@@ -94,7 +94,7 @@ begin
         clk => clk,
         rst => rst,
         en => en_cont,
-        y => cont_addr
+        y => cout16
     );
     
     uart_A: Rs232RefComp port map (
