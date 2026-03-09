@@ -34,6 +34,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity control_unit_A is
     port(
         clk, rst : in STD_LOGIC;
+        cout16 : in STD_LOGIC_VECTOR(3 DOWNTO 0);
         TBE : in STD_LOGIC;
         start : in STD_LOGIC;
         WR : out STD_LOGIC;
@@ -92,7 +93,14 @@ begin
                 
             when INCR_COUNT =>
                 en_count <= '1';
-                stato_prossimo <= LETTURA;
+                if cout16 = "1111" then
+                    stato_prossimo <= IDLE;
+                else
+                    stato_prossimo <= LETTURA;
+                end if;
+
+            when others =>
+                stato_prossimo <= IDLE;
         
         end case;
     end process;

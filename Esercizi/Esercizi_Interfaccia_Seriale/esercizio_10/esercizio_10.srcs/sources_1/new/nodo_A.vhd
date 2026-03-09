@@ -44,6 +44,7 @@ architecture Structural of nodo_A is
     component control_unit_A
         port(
             clk, rst : in STD_LOGIC;
+            cout16 : in STD_LOGIC_VECTOR(3 DOWNTO 0);
             TBE : in STD_LOGIC;
             start : in STD_LOGIC;
             WR : out STD_LOGIC;
@@ -58,6 +59,7 @@ architecture Structural of nodo_A is
             read : in STD_LOGIC;
             en_cont : in STD_LOGIC;
             WR : in STD_LOGIC;
+            cout16 : out STD_LOGIC_VECTOR(3 DOWNTO 0);
             TXD : out std_logic  	:= '1';
             TBE	: inout std_logic 	:= '1'
         );
@@ -65,12 +67,14 @@ architecture Structural of nodo_A is
     
     signal read_en, count_en, wr_en : STD_LOGIC;
     signal TBE_SIGNAL : STD_LOGIC;
+    signal cout16_signal : STD_LOGIC_VECTOR(3 DOWNTO 0);
     
 begin
 
     ucA: control_unit_A port map(
         clk => clk,
         rst => rst,
+        cout16 => cout16_signal,
         TBE => TBE_SIGNAL,
         start => start,
         WR => wr_en,
@@ -85,7 +89,8 @@ begin
         en_cont => count_en,
         WR => wr_en,
         TXD => serial_data,
-        TBE	=> TBE_SIGNAL
+        TBE	=> TBE_SIGNAL,
+        cout16 => cout16_signal
     );
     
 end Structural;
