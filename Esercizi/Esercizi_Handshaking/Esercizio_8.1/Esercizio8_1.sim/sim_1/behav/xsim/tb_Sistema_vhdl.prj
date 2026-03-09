@@ -1,0 +1,16 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Esercizio8_1.srcs/sources_1/new/Datapath_A.vhd" \
+"../../../../Esercizio8_1.srcs/sources_1/new/Datapath_B.vhd" \
+"../../../../Esercizio8_1.srcs/sources_1/new/FA.vhd" \
+"../../../../Esercizio8_1.srcs/sources_1/new/Nodo_A.vhd" \
+"../../../../Esercizio8_1.srcs/sources_1/new/Nodo_B.vhd" \
+"../../../../Esercizio8_1.srcs/sources_1/new/RCA_4.vhd" \
+"../../../../Esercizio8_1.srcs/sources_1/new/Sistema.vhd" \
+"../../../../Esercizio8_1.srcs/sources_1/new/cont_16.vhd" \
+"../../../../Esercizio8_1.srcs/sources_1/new/control_unit_A.vhd" \
+"../../../../Esercizio8_1.srcs/sources_1/new/control_unit_B.vhd" \
+"../../../../Esercizio8_1.srcs/sim_1/new/tb_sistema.vhd" \
+
+# Do not sort compile order
+nosort
