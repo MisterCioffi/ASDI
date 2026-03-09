@@ -31,10 +31,6 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-
--- L'entità del testbench è sempre vuota perché non ha pin verso l'esterno
 entity tb_Sistema is
 end tb_Sistema;
 
@@ -56,7 +52,7 @@ architecture behavior of tb_Sistema is
     signal carry_final : std_logic;
 
     -- periodo del segnale di Clock
-    constant clk_period : time := 10 ns;
+    constant clk_period : time := 20 ns;
 
 begin
 
@@ -82,7 +78,7 @@ begin
     
         rst <= '1';
         start <= '0';
-        wait for 30 ns; 
+        wait for 100 ns; 
         
         rst <= '0';
         wait for 20 ns;
