@@ -14,7 +14,7 @@ Gli esercizi sono suddivisi nelle seguenti sezioni, ciascuna corrispondente a un
 |---|---|
 | `Esercizi_Reti_Elementari` | Reti combinatorie elementari (mux, demux, reti logiche) |
 | `Esercizi_Reti_Sequenziali_Elementari` | Reti sequenziali elementari (contatori, shift register, cronometri, sistemi PO/PC) |
-| `Esercizi_Macchine_Aritmetiche` | Macchine aritmetiche (moltiplicatore di Booth, ecc.) |
+| `Esercizi_Macchine_Aritmetiche` | Macchine aritmetiche (moltiplicatore di Booth) |
 | `Esercizi_Handshaking` | Protocolli di handshaking |
 | `Esercizi_Interfaccia_Seriale` | Interfacce seriali |
 | `Esercizi_SwitchMultistadio` | Switch multistadio |
