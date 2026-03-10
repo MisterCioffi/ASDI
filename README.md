@@ -1,4 +1,4 @@
-# ASDI-1 — Architettura dei Sistemi Digitali
+# ASDI — Architettura dei Sistemi Digitali
 
 Repository contenente tutti gli esercizi svolti per il corso di **Architettura dei Sistemi Digitali (ASDI)**, organizzati per capitoli tematici. I progetti sono sviluppati in **VHDL** e gestiti tramite **Xilinx Vivado**.
 
